@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "competitive-benchmark-analysis",
+  "enterpriseId": "ent-benchmark",
+  "businessProjectId": "20260730-001-benchmark",
+  "taskId": "task-benchmark",
+  "runId": "run-benchmark",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "no_hit",
+    "evidencePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/knowledge-context.json",
+    "evidenceSha256": "440a037e5f1ddbc20d8b24110e340b6ad943e1e3a60c42b7cec93096ede88863"
+  },
+  "scope": {
+    "upstreamArtifact": {
+      "artifactId": "growth-opportunity-brief",
+      "version": 1,
+      "sha256": "16bb5e728dcca2bcc9ede982ba0c3ca2c182e404cefdf2336241f04563444022",
+      "path": "business-projects/ent-benchmark/20260730-001-benchmark/shared-artifacts/growth-opportunity-brief/v1.json"
+    },
+    "objective": "形成企业内部竞争机制分析与原创实验候选",
+    "productOrService": "公开内容到许可式主动行动的企业内部增长机制",
+    "region": "未指定地域，范围限于企业内部分析",
+    "timeRange": "观察截至2026年7月30日",
+    "brandBriefVersion": "品牌Brief版本未提供",
+    "constraints": [
+      "仅形成企业内部候选",
+      "不推断私有成交表现",
+      "不改变企业战略、品牌定位、价格政策或成交规则",
+      "外部动作：无"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "evidence-a-action",
+      "type": "public_fact",
+      "claim": "A每周3篇公众号文章并公开9.9元资料包。",
+      "sourcePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt",
+      "sourceVersion": "canonical-scenario-input-v1",
+      "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "appliesTo": "sample-a"
+    },
+    {
+      "id": "evidence-b-action",
+      "type": "public_fact",
+      "claim": "B每周5条小红书清单内容并引导私信。",
+      "sourcePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt",
+      "sourceVersion": "canonical-scenario-input-v1",
+      "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "appliesTo": "sample-b"
+    },
+    {
+      "id": "evidence-c-action",
+      "type": "public_fact",
+      "claim": "C每月1场公开课，官网有课程目录但价格未公开。",
+      "sourcePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt",
+      "sourceVersion": "canonical-scenario-input-v1",
+      "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "appliesTo": "sample-c"
+    },
+    {
+      "id": "evidence-d-action",
+      "type": "public_fact",
+      "claim": "只保留企业现有公开资料承接",
+      "sourcePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt",
+      "sourceVersion": "canonical-scenario-input-v1",
+      "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "appliesTo": "alternative-d"
+    },
+    {
+      "id": "evidence-d-scope",
+      "type": "scope_fact",
+      "claim": "替代样本D定义为“不新增竞品式内容动作，只保留企业现有公开资料承接”",
+      "sourcePath": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt",
+      "sourceVersion": "canonical-scenario-input-v1",
+      "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "appliesTo": "alternative-d"
+    }
+  ],
+  "samples": [
+    {
+      "id": "sample-a",
+      "name": "直接样本A",
+      "kind": "direct",
+      "selectionReason": "企业内部分析公众号文章与公开资料包的组合机制",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "evidenceRefs": [
+        "evidence-a-action"
+      ],
+      "layers": {
+        "positioning": {
+          "publicFacts": [
+            "A每周3篇公众号文章并公开9.9元资料包。"
+          ],
+          "inferences": [
+            "机制推断：固定发布节奏可能形成稳定的信息接触"
+          ],
+          "unknowns": [
+            "收入暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-a-action"
+          ]
+        },
+        "productStrategy": {
+          "publicFacts": [
+            "A每周3篇公众号文章并公开9.9元资料包。"
+          ],
+          "inferences": [
+            "机制推断：公开资料包可能降低首次体验门槛"
+          ],
+          "unknowns": [
+            "利润尚不清楚"
+          ],
+          "evidenceRefs": [
+            "evidence-a-action"
+          ]
+        },
+        "contentMechanism": {
+          "publicFacts": [
+            "A每周3篇公众号文章并公开9.9元资料包。"
+          ],
+          "inferences": [
+            "机制推断：文章与资料包组合可能连接解释与行动"
+          ],
+          "unknowns": [
+            "复购率未披露"
+          ],
+          "evidenceRefs": [
+            "evidence-a-action"
+          ]
+        },
+        "acquisitionChannels": {
+          "publicFacts": [
+            "A每周3篇公众号文章并公开9.9元资料包。"
+          ],
+          "inferences": [
+            "机制推断：公众号公开内容可能提供可识别入口"
+          ],
+          "unknowns": [
+            "转化率暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-a-action"
+          ]
+        },
+        "observableCustomerPath": {
+          "publicFacts": [
+            "A每周3篇公众号文章并公开9.9元资料包。"
+          ],
+          "inferences": [
+            "机制推断：公开文章到公开资料包构成可观察路径"
+          ],
+          "unknowns": [
+            "成交表现暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-a-action"
+          ]
+        }
+      },
+      "privateUnknowns": [
+        "收入暂无数据",
+        "利润尚不清楚",
+        "转化率暂无数据",
+        "成交表现暂无数据",
+        "复购率未披露",
+        "ROI暂无数据",
+        "ROAS暂无数据"
+      ]
+    },
+    {
+      "id": "sample-b",
+      "name": "直接样本B",
+      "kind": "direct",
+      "selectionReason": "企业内部分析清单内容与私信引导的组合机制",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "evidenceRefs": [
+        "evidence-b-action"
+      ],
+      "layers": {
+        "positioning": {
+          "publicFacts": [
+            "B每周5条小红书清单内容并引导私信。"
+          ],
+          "inferences": [
+            "机制推断：清单结构可能降低信息扫描成本"
+          ],
+          "unknowns": [
+            "收入暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-b-action"
+          ]
+        },
+        "productStrategy": {
+          "publicFacts": [
+            "B每周5条小红书清单内容并引导私信。"
+          ],
+          "inferences": [
+            "机制推断：清单内容可能形成可复用的信息单元"
+          ],
+          "unknowns": [
+            "利润尚不清楚"
+          ],
+          "evidenceRefs": [
+            "evidence-b-action"
+          ]
+        },
+        "contentMechanism": {
+          "publicFacts": [
+            "B每周5条小红书清单内容并引导私信。"
+          ],
+          "inferences": [
+            "机制推断：固定频率可能支持持续内容接触"
+          ],
+          "unknowns": [
+            "复购率未披露"
+          ],
+          "evidenceRefs": [
+            "evidence-b-action"
+          ]
+        },
+        "acquisitionChannels": {
+          "publicFacts": [
+            "B每周5条小红书清单内容并引导私信。"
+          ],
+          "inferences": [
+            "机制推断：小红书公开内容可能提供可识别入口"
+          ],
+          "unknowns": [
+            "转化率暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-b-action"
+          ]
+        },
+        "observableCustomerPath": {
+          "publicFacts": [
+            "B每周5条小红书清单内容并引导私信。"
+          ],
+          "inferences": [
+            "机制推断：公开清单到私信引导构成可观察路径"
+          ],
+          "unknowns": [
+            "成交表现暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-b-action"
+          ]
+        }
+      },
+      "privateUnknowns": [
+        "收入暂无数据",
+        "利润尚不清楚",
+        "转化率暂无数据",
+        "成交表现暂无数据",
+        "复购率未披露",
+        "ROI暂无数据",
+        "ROAS暂无数据"
+      ]
+    },
+    {
+      "id": "sample-c",
+      "name": "直接样本C",
+      "kind": "direct",
+      "selectionReason": "企业内部分析公开课与官网课程目录的组合机制",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "evidenceRefs": [
+        "evidence-c-action"
+      ],
+      "layers": {
+        "positioning": {
+          "publicFacts": [
+            "C每月1场公开课，官网有课程目录但价格未公开。"
+          ],
+          "inferences": [
+            "机制推断：公开课可能集中解释复杂主题"
+          ],
+          "unknowns": [
+            "收入暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-c-action"
+          ]
+        },
+        "productStrategy": {
+          "publicFacts": [
+            "C每月1场公开课，官网有课程目录但价格未公开。"
+          ],
+          "inferences": [
+            "机制推断：课程目录可能降低产品理解成本"
+          ],
+          "unknowns": [
+            "利润尚不清楚"
+          ],
+          "evidenceRefs": [
+            "evidence-c-action"
+          ]
+        },
+        "contentMechanism": {
+          "publicFacts": [
+            "C每月1场公开课，官网有课程目录但价格未公开。"
+          ],
+          "inferences": [
+            "机制推断：公开课与课程目录可能形成预览机制"
+          ],
+          "unknowns": [
+            "复购率未披露"
+          ],
+          "evidenceRefs": [
+            "evidence-c-action"
+          ]
+        },
+        "acquisitionChannels": {
+          "publicFacts": [
+            "C每月1场公开课，官网有课程目录但价格未公开。"
+          ],
+          "inferences": [
+            "机制推断：公开课与官网可能提供组合入口"
+          ],
+          "unknowns": [
+            "转化率暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-c-action"
+          ]
+        },
+        "observableCustomerPath": {
+          "publicFacts": [
+            "C每月1场公开课，官网有课程目录但价格未公开。"
+          ],
+          "inferences": [
+            "机制推断：公开课到官网课程目录构成可观察路径"
+          ],
+          "unknowns": [
+            "成交表现暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-c-action"
+          ]
+        }
+      },
+      "privateUnknowns": [
+        "收入暂无数据",
+        "利润尚不清楚",
+        "转化率暂无数据",
+        "成交表现暂无数据",
+        "复购率未披露",
+        "ROI暂无数据",
+        "ROAS暂无数据"
+      ]
+    },
+    {
+      "id": "alternative-d",
+      "name": "替代样本D",
+      "kind": "alternative",
+      "selectionReason": "企业内部比较不新增竞品式内容动作的基线",
+      "observedAt": "2026-07-30T23:59:59.000Z",
+      "evidenceRefs": [
+        "evidence-d-action",
+        "evidence-d-scope"
+      ],
+      "layers": {
+        "positioning": {
+          "publicFacts": [
+            "只保留企业现有公开资料承接"
+          ],
+          "inferences": [
+            "机制推断：现有公开资料可能形成低增量基线"
+          ],
+          "unknowns": [
+            "收入暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-d-action"
+          ]
+        },
+        "productStrategy": {
+          "publicFacts": [
+            "只保留企业现有公开资料承接"
+          ],
+          "inferences": [
+            "机制推断：现有资料承接可能保留原有信息结构"
+          ],
+          "unknowns": [
+            "利润尚不清楚"
+          ],
+          "evidenceRefs": [
+            "evidence-d-action"
+          ]
+        },
+        "contentMechanism": {
+          "publicFacts": [
+            "只保留企业现有公开资料承接"
+          ],
+          "inferences": [
+            "机制推断：不新增动作可能隔离增量内容变量"
+          ],
+          "unknowns": [
+            "复购率未披露"
+          ],
+          "evidenceRefs": [
+            "evidence-d-action"
+          ]
+        },
+        "acquisitionChannels": {
+          "publicFacts": [
+            "只保留企业现有公开资料承接"
+          ],
+          "inferences": [
+            "机制推断：现有公开资料可能提供基础入口"
+          ],
+          "unknowns": [
+            "转化率暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-d-action"
+          ]
+        },
+        "observableCustomerPath": {
+          "publicFacts": [
+            "只保留企业现有公开资料承接"
+          ],
+          "inferences": [
+            "机制推断：现有公开资料承接可作为新增机制的对照路径"
+          ],
+          "unknowns": [
+            "成交表现暂无数据"
+          ],
+          "evidenceRefs": [
+            "evidence-d-action"
+          ]
+        }
+      },
+      "privateUnknowns": [
+        "收入暂无数据",
+        "利润尚不清楚",
+        "转化率暂无数据",
+        "成交表现暂无数据",
+        "复购率未披露",
+        "ROI暂无数据",
+        "ROAS暂无数据"
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "id": "transfer-original-structure",
+      "evidenceRefs": [
+        "evidence-a-action",
+        "evidence-b-action",
+        "evidence-c-action",
+        "evidence-d-action",
+        "evidence-d-scope"
+      ],
+      "surfaceAction": "企业内部制作公开内容与资料承接草案",
+      "underlyingMechanism": "底层机制是降低信息理解成本并形成可观察行动入口",
+      "enterpriseFit": "企业内部采用现有资料形成原创内容草案",
+      "originalImplementation": "企业内部起草原创内容与资料承接结构",
+      "doNotCopy": [
+        "名称",
+        "口号",
+        "核心文案",
+        "视觉身份",
+        "案例"
+      ],
+      "antiCopyChecks": {
+        "copiesName": false,
+        "copiesSlogan": false,
+        "copiesCoreCopy": false,
+        "copiesVisualIdentity": false,
+        "copiesCases": false,
+        "brandConfusionRisk": "none",
+        "intellectualPropertyRisk": "none"
+      },
+      "experiment": {
+        "id": "experiment-original-structure",
+        "hypothesis": "企业内部未来实验验证原创资料承接结构是否改善内部任务完成率",
+        "experimentObject": "企业内部原创资料承接草案",
+        "control": "企业内部现有资料承接草案",
+        "sample": "企业内部模拟任务记录",
+        "metric": "内部任务完成率",
+        "secondaryMetrics": [
+          "内部理解用时",
+          "内部步骤完成数量"
+        ],
+        "riskMetrics": [
+          "内部误读数量",
+          "内部边界偏离数量"
+        ],
+        "baseline": 0,
+        "target": 1,
+        "maximumDays": 14,
+        "maximumCost": "未来企业内部制作成本上限500元",
+        "stopConditions": [
+          "达到最长期限时停止内部实验",
+          "出现任何内部误读时停止内部实验"
+        ],
+        "dataCollectionMethod": "企业内部记录测试任务结果",
+        "reviewAt": "2026-08-13T23:59:59.000Z",
+        "externalActions": [
+          "analyze_evidence",
+          "draft_internal_content",
+          "measure_internal_metric",
+          "review_internal_result"
+        ],
+        "requiresApproval": false
+      }
+    }
+  ],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [],
+  "debugReport": {
+    "status": "passed_with_unknowns",
+    "diagnostics": [
+      {
+        "code": "public_scope_only",
+        "severity": "info",
+        "affectedSample": "global",
+        "explanation": "内部审核仅保留公开可观察动作",
+        "recoveryAction": "企业内部保留私有表现未知"
+      },
+      {
+        "code": "all_sources_current",
+        "severity": "info",
+        "affectedSample": "global",
+        "explanation": "内部审核确认观察时间不晚于参考时间",
+        "recoveryAction": "企业内部保留当前来源绑定"
+      },
+      {
+        "code": "presence_is_not_effectiveness",
+        "severity": "warning",
+        "affectedSample": "sample-b",
+        "explanation": "内部审核仅记录公开渠道动作",
+        "recoveryAction": "企业内部保留渠道效果待验证"
+      },
+      {
+        "code": "observable_path_gap",
+        "severity": "warning",
+        "affectedSample": "sample-b",
+        "explanation": "内部审核仅记录最后一个公开步骤",
+        "recoveryAction": "内部实验只使用模拟路径，不补造后续信息"
+      }
+    ],
+    "remainingUnknowns": [
+      "收入暂无数据",
+      "利润尚不清楚",
+      "转化率暂无数据",
+      "成交表现暂无数据",
+      "复购率未披露",
+      "ROI暂无数据",
+      "ROAS暂无数据"
+    ]
+  },
+  "review": {
+    "baselineMetrics": [
+      "内部任务完成率",
+      "内部模拟路径完成数基线"
+    ],
+    "reviewAt": "2026-08-13T23:59:59.000Z",
+    "decisionRules": [
+      "企业内部根据目标结果决定是否保留草案",
+      "企业内部发现任何误读时停止实验并复核边界"
+    ]
+  }
+}

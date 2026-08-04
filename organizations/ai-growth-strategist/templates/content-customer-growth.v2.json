@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "content-customer-growth",
+  "templateOnly": true,
+  "status": "designing",
+  "trustedContext": {
+    "required": true,
+    "identityFields": ["enterpriseId", "businessProjectId", "taskId", "runId"],
+    "projectRootRequired": true,
+    "knowledgeReceiptShaRequired": true,
+    "knowledgeSourceShaRequired": true,
+    "commercePolicyRequired": true
+  },
+  "upstreamArtifacts": [
+    "growth-opportunity-brief@version",
+    "benchmark-mechanism-map@version",
+    "brand-brief@version",
+    "deal-handoff-contract@version"
+  ],
+  "channels": [
+    "short-video",
+    "xiaohongshu",
+    "permission-private-domain"
+  ],
+  "weeklyCapacity": {
+    "short-video": 5,
+    "xiaohongshu": 3,
+    "permission-private-domain": 2
+  },
+  "lifecycleStages": [
+    "anonymous-awareness",
+    "active-interest",
+    "consented-nurture",
+    "explicit-inquiry",
+    "service",
+    "repurchase-candidate"
+  ],
+  "consentRequiredFields": [
+    "purpose",
+    "allowedChannels",
+    "retentionDays",
+    "optOutMechanism",
+    "refusalStopsContact",
+    "expiryStopsContact",
+    "noAutomatedOutreach",
+    "noProactiveContact"
+  ],
+  "dealHandoff": {
+    "requiredFieldCount": 14,
+    "requiresUpstreamVersionAndSha": true,
+    "priceAndRefundMustBeFinalized": true
+  },
+  "repurchase": {
+    "eligibilityAndExclusionsRequired": true,
+    "unrequestedFollowUpForbidden": true
+  },
+  "externalActionGate": "awaiting_approval",
+  "channelLifecycleMatrixCells": 18,
+  "sharedRuntime": [
+    "growth_planner.mjs",
+    "growth_run_store.mjs",
+    "growth_experiment_manager.mjs",
+    "browser_continuous_action_controller.mjs"
+  ],
+  "note": "模板只描述 v0.2 合同；正式候选必须由控制中心传入外部受信任身份、版本、SHA-256、知识凭证和商业规则状态。"
+}

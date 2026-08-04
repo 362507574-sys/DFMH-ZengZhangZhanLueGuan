@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "mode": "three-layer-baseline",
+  "request": "建立完整获客增长方案",
+  "identity": {
+    "enterpriseId": "enterprise-1122334455667788",
+    "businessProjectId": "20260731-001-growth-basic",
+    "taskId": "20260731-001-growth-basic-task"
+  },
+  "stages": [
+    {
+      "skillId": "growth-opportunity-analysis",
+      "requiredInputs": [
+        "enterprise-goal",
+        "available-evidence",
+        "known-constraints"
+      ],
+      "outputArtifact": "growth-opportunity-brief"
+    },
+    {
+      "skillId": "competitive-benchmark-analysis",
+      "requiredInputs": [
+        "growth-opportunity-brief",
+        "public-competitor-evidence"
+      ],
+      "outputArtifact": "benchmark-mechanism-map"
+    },
+    {
+      "skillId": "content-customer-growth",
+      "requiredInputs": [
+        "growth-opportunity-brief",
+        "benchmark-mechanism-map",
+        "brand-brief",
+        "deal-handoff-contract"
+      ],
+      "outputArtifact": "content-customer-growth-plan"
+    }
+  ],
+  "safety": {
+    "projectIdentityLocked": true,
+    "evidenceRequired": true,
+    "organizationBoundariesLocked": true,
+    "automaticCustomerContact": false,
+    "externalActions": [
+      {
+        "action": "publish_content",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "paid_media",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "contact_customer",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "change_price",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "change_refund_rule",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "brand_commitment",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "deal_commitment",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      },
+      {
+        "action": "write_external_system",
+        "gate": "awaiting_approval",
+        "approvalId": null
+      }
+    ]
+  },
+  "acceptance": {
+    "normalScenarioRequired": true,
+    "keyRejectionsRequired": true,
+    "v1CompatibilityRequired": true,
+    "projectSelfCheckRequired": true,
+    "advancedIndependentProofDeferred": true
+  },
+  "status": "designing",
+  "acceptsFormalTasks": false
+}

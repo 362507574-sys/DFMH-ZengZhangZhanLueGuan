@@ -1,0 +1,35 @@
+{
+  "role": "independent-forward-evaluator",
+  "scenario": {
+    "licensedSubscribers": 2000,
+    "diagnosticClickRate": "18%",
+    "otherTopicClickRate": "7%",
+    "webinarRegistrations": 240,
+    "webinarAttendance": 96,
+    "qualifiedInquiries": 14,
+    "personalAttributionAvailable": false
+  },
+  "readTests": false,
+  "readExamples": false,
+  "readTemplates": false,
+  "readOldForward": false,
+  "baselineUsedSkill": false,
+  "forwardUsedSkill": true,
+  "forwardSources": [
+    "skills/growth-opportunity-analysis/SKILL.md",
+    "workflows/GROWTH_OPPORTUNITY_ANALYSIS.md"
+  ],
+  "writerTask": "/root/growth_opportunity_v02_impl/canonical_forward_proof",
+  "taskName": "/root/growth_opportunity_v02_impl/canonical_forward_proof",
+  "promptDigest": "3a8248da01ff5376dce23004f91e7b4927efa5e39621ac775759091493de2ba4",
+  "isCryptographicIsolationProof": false,
+  "forbiddenPaths": [
+    "organizations/ai-growth-strategist/tests",
+    "organizations/ai-growth-strategist/examples",
+    "organizations/ai-growth-strategist/templates",
+    "temp/growth-strategist-v02-implementation/forward"
+  ],
+  "resultDigest": "413af217dafb9556c07b4d7ad287ee27cb273399d59c3fb28b6a63edf04a8160",
+  "attestationScope": "fixed_declaration_integrity_only",
+  "completedAt": "2026-07-30T00:00:00.000Z"
+}

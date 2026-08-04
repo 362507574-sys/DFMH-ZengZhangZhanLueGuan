@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "growth-opportunity-analysis",
+  "enterpriseId": "enterprise-1122334455667788",
+  "businessProjectId": "20260729-001-growth",
+  "taskId": "20260729-001-growth-test",
+  "runId": "run-opportunity-001",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "degraded",
+    "evidencePath": "business-projects/enterprise-1122334455667788/20260729-001-growth/organizations/ai-growth-strategist/runs/run-opportunity-001/knowledge-context.json",
+    "evidenceSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "scope": {
+    "businessGoal": "判断下季度最值得验证的增长机会",
+    "productOrService": "企业经营诊断与研讨会",
+    "region": "中国大陆",
+    "timeRange": "2026-Q3",
+    "constraints": [
+      "不自动联系客户",
+      "不承诺成交或增长结果"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "ev-subscribers",
+      "type": "enterprise_fact",
+      "claim": "企业有2000名许可邮件订阅用户。",
+      "sourceReference": "enterprise-growth-brief-2026-q2",
+      "sourceVersion": "2026-q2",
+      "sourceSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "observedAt": "2026-07-29T00:00:00.000Z",
+      "appliesTo": "现有许可邮件订阅用户",
+      "confidence": "A",
+      "polarity": "support",
+      "conflictReferences": []
+    },
+    {
+      "id": "ev-click-rate",
+      "type": "behavior_data",
+      "claim": "最近8周经营诊断内容点击率18%，其他主题7%。",
+      "sourceReference": "email-topic-report-2026-w21-w28",
+      "sourceVersion": "2026-w28",
+      "sourceSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "observedAt": "2026-07-29T00:00:00.000Z",
+      "appliesTo": "最近8周许可邮件",
+      "confidence": "A",
+      "polarity": "support",
+      "conflictReferences": []
+    },
+    {
+      "id": "ev-webinars",
+      "type": "behavior_data",
+      "claim": "两场研讨会共报名240人、到场96人、有效咨询14个。",
+      "sourceReference": "webinar-summary-2026-q2",
+      "sourceVersion": "2026-q2",
+      "sourceSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "observedAt": "2026-07-29T00:00:00.000Z",
+      "appliesTo": "两场经营诊断研讨会",
+      "confidence": "A",
+      "polarity": "support",
+      "conflictReferences": []
+    },
+    {
+      "id": "ev-no-attribution",
+      "type": "unknown",
+      "claim": "没有个人级来源归因，无法证明邮件点击导致研讨会咨询。",
+      "sourceReference": "attribution-gap-2026-q2",
+      "sourceVersion": "2026-q2",
+      "sourceSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "observedAt": "2026-07-29T00:00:00.000Z",
+      "appliesTo": "邮件至研讨会咨询链路",
+      "confidence": "A",
+      "polarity": "counter",
+      "conflictReferences": []
+    },
+    {
+      "id": "ev-counter",
+      "type": "hypothesis",
+      "claim": "经营诊断点击优势可能由主题标题或发送时段造成，而非稳定需求。",
+      "sourceReference": "counter-hypothesis-001",
+      "sourceVersion": "v1",
+      "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "observedAt": "2026-07-29T00:00:00.000Z",
+      "appliesTo": "经营诊断内容需求假设",
+      "confidence": "D",
+      "polarity": "counter",
+      "conflictReferences": []
+    }
+  ],
+  "analysisBranches": [
+    {
+      "id": "market-trends",
+      "status": "limited",
+      "findings": [
+        "当前材料没有足以证明外部市场长期趋势的公开证据。"
+      ],
+      "evidenceRefs": [
+        "ev-no-attribution"
+      ],
+      "inferences": [
+        "先用企业一方数据验证需求，再决定是否扩大公开市场研究。"
+      ],
+      "unknowns": [
+        "政策、技术、品类与渠道趋势未知。"
+      ]
+    },
+    {
+      "id": "user-demand",
+      "status": "supported",
+      "findings": [
+        "经营诊断主题点击率是其他主题的两倍。"
+      ],
+      "evidenceRefs": [
+        "ev-click-rate",
+        "ev-webinars"
+      ],
+      "inferences": [
+        "许可订阅用户对经营诊断主题存在较强行为兴趣。"
+      ],
+      "unknowns": [
+        "点击兴趣是否稳定转化为有效咨询未知。"
+      ]
+    },
+    {
+      "id": "industry-opportunity",
+      "status": "limited",
+      "findings": [
+        "当前材料不足以估算行业规模或竞争密度。"
+      ],
+      "evidenceRefs": [
+        "ev-no-attribution"
+      ],
+      "inferences": [
+        "不以无来源市场规模支持优先级。"
+      ],
+      "unknowns": [
+        "替代方案、进入条件和时间窗口未知。"
+      ]
+    },
+    {
+      "id": "enterprise-growth-space",
+      "status": "supported",
+      "findings": [
+        "研讨会报名到场率为40%，到场后有效咨询率为25%。"
+      ],
+      "evidenceRefs": [
+        "ev-subscribers",
+        "ev-webinars",
+        "ev-no-attribution"
+      ],
+      "inferences": [
+        "最先补齐的增长断点是许可邮件到研讨会咨询的可追踪链路。"
+      ],
+      "unknowns": [
+        "报名者与许可订阅者的重叠比例未知。"
+      ]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-diagnostic-path",
+      "title": "许可邮件经营诊断内容到研讨会的可追踪验证",
+      "targetSegment": "已许可接收邮件且对经营诊断主题有行为兴趣的企业经营者",
+      "customerProblem": "需要把经营问题转为可执行诊断动作",
+      "scenario": "季度经营复盘前的自助诊断与研讨会报名",
+      "mechanism": "以分组许可邮件提供不同诊断主题入口，并用聚合版本标记比较到场和有效咨询率",
+      "evidenceRefs": [
+        "ev-subscribers",
+        "ev-click-rate",
+        "ev-webinars"
+      ],
+      "counterEvidenceRefs": [
+        "ev-counter",
+        "ev-no-attribution"
+      ],
+      "unknowns": [
+        "没有个人级来源归因",
+        "没有成交率和客单价数据"
+      ],
+      "attractiveness": {
+        "demandStrength": 75,
+        "enterpriseFit": 85,
+        "reachability": 90,
+        "potentialValue": 65,
+        "timing": 70,
+        "competitionAndEffort": 70,
+        "total": 77
+      },
+      "confidence": {
+        "grade": "B",
+        "reason": "企业事实与两类行为数据共同支持，且保留归因缺口。",
+        "evidenceTypeCount": 2,
+        "hasEnterpriseBehaviorData": true
+      },
+      "experiment": {
+        "id": "experiment-diagnostic-path",
+        "hypothesis": "经营诊断主题入口能在不提高投诉率的前提下提升有效咨询率",
+        "experimentObject": "现有许可邮件订阅用户的两个匹配聚合组",
+        "control": "当前其他主题邮件",
+        "sample": "两个匹配聚合组，各完成一轮发送",
+        "metric": "每封成功送达邮件对应的有效咨询率",
+        "secondaryMetrics": [
+          "点击率",
+          "报名到场率"
+        ],
+        "riskMetrics": [
+          "退订率",
+          "投诉率"
+        ],
+        "baseline": 0.012,
+        "target": 0.016,
+        "maximumDays": 30,
+        "maximumCost": "不增加付费媒体",
+        "stopConditions": [
+          "投诉率高于既有基线",
+          "两组成功送达量不足以完成方向性比较"
+        ],
+        "dataCollectionMethod": "按邮件版本记录聚合点击、报名、到场和有效咨询，不处理新增原始个人信息",
+        "reviewAt": "2026-08-29T00:00:00.000Z",
+        "externalActions": [
+          "publish_content"
+        ],
+        "requiresApproval": true
+      }
+    }
+  ],
+  "priorityMap": [
+    {
+      "opportunityId": "opp-diagnostic-path",
+      "attractiveness": 77,
+      "confidence": "B",
+      "decision": "priority_experiment"
+    }
+  ],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [
+    {
+      "targetOrganization": "ai-deal-officer",
+      "reason": "仅请求确认有效咨询的交接定义，不作成交或价格承诺。"
+    }
+  ],
+  "debugReport": {
+    "status": "passed_with_unknowns",
+    "diagnostics": [
+      {
+        "code": "ok",
+        "severity": "info",
+        "field": "opportunities[0]",
+        "explanation": "机会保留反证、归因缺口和有界实验。",
+        "recoveryAction": "按复盘时间检查实验结果。"
+      }
+    ],
+    "remainingUnknowns": [
+      "外部市场趋势",
+      "行业规模",
+      "个人级来源归因"
+    ]
+  },
+  "review": {
+    "baselineMetrics": [
+      "经营诊断内容点击率18%",
+      "其他主题点击率9%",
+      "研讨会报名到场率40%",
+      "到场后有效咨询率25%"
+    ],
+    "reviewAt": "2026-08-29T00:00:00.000Z",
+    "decisionRules": [
+      "达到主指标且风险指标不恶化，才提交扩大实验候选",
+      "触发停止条件或归因仍不可解释时停止扩大"
+    ]
+  }
+}

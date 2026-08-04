@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-growth-strategist",
+  "displayName": "AI增长战略官",
+  "systemName": "增长获客系统",
+  "deploymentMode": "same_project_organization_module",
+  "status": "designing",
+  "acceptsFormalTasks": false,
+  "rootControllerRegistration": "registered_designing",
+  "formalTaskRouting": "fallback_existing",
+  "peerOrganizationCalls": "contract_only",
+  "coreSkills": [
+    {
+      "id": "growth-opportunity-analysis",
+      "name": "增长机会分析",
+      "status": "designing"
+    },
+    {
+      "id": "competitive-benchmark-analysis",
+      "name": "竞争对标拆解",
+      "status": "designing"
+    },
+    {
+      "id": "content-customer-growth",
+      "name": "内容与客户增长",
+      "status": "designing"
+    }
+  ],
+  "publicSkillDependencies": [
+    {
+      "id": "public.promotional-poster",
+      "mode": "via-control-center"
+    },
+    {
+      "id": "public.taobao-ecommerce-image-set",
+      "mode": "via-control-center"
+    }
+  ]
+}

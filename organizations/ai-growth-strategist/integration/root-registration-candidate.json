@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "organizationId": "ai-growth-strategist",
+  "status": "designing",
+  "acceptsFormalTasks": false,
+  "formalTaskRouting": "fallback_existing",
+  "coreSkillIds": [
+    "growth-opportunity-analysis",
+    "competitive-benchmark-analysis",
+    "content-customer-growth"
+  ],
+  "publicSkillDependencies": [
+    "public.promotional-poster",
+    "public.taobao-ecommerce-image-set"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "content-customer-growth",
+  "status": "designing",
+  "scenario": "专业、长期陪伴、不过度承诺；月度三渠道内容、许可培育和复购候选。",
+  "exactUpstreamBindings": [
+    "growth-opportunity-brief@2 + SHA-256",
+    "benchmark-mechanism-map@2 + SHA-256",
+    "brand-brief@3 + SHA-256",
+    "deal-handoff-contract@1 + SHA-256"
+  ],
+  "channelPlanSummary": [
+    {
+      "channel": "short-video",
+      "weeklyLimit": 5,
+      "originalMechanism": "问题识别、方法教育与客户自主行动"
+    },
+    {
+      "channel": "xiaohongshu",
+      "weeklyLimit": 3,
+      "originalMechanism": "搜索场景、收藏价值与原创图文结构"
+    },
+    {
+      "channel": "permission-private-domain",
+      "weeklyLimit": 2,
+      "originalMechanism": "明确许可范围内的方法教育与自助诊断"
+    }
+  ],
+  "lifecycleStages": [
+    "anonymous-awareness",
+    "active-interest",
+    "consented-nurture",
+    "explicit-inquiry",
+    "service",
+    "repurchase-candidate"
+  ],
+  "consentSafety": {
+    "purposeBound": true,
+    "retentionBound": true,
+    "optOutAvailable": true,
+    "automatedOutreach": false,
+    "proactiveContact": false
+  },
+  "dealHandoff": {
+    "requiredFieldCount": 14,
+    "priceStatus": "finalized",
+    "refundRuleStatus": "finalized",
+    "trigger": "客户自主明确请求咨询、报价、购买或续费"
+  },
+  "repurchase": {
+    "requiresServiceCompletion": true,
+    "requiresCustomerInitiatedNeed": true,
+    "excludesComplaintRefundDeliveryAndOptOut": true
+  },
+  "approvalGate": "awaiting_approval",
+  "executedExternalActions": [],
+  "debugCoverage": "3 channels x 6 lifecycle stages = 18 cells",
+  "note": "演示仅说明内部候选结构；未发布、未投放、未联系客户，也未创建 fresh proof 或 Checkpoint。"
+}

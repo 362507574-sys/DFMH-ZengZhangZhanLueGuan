@@ -1,0 +1,4 @@
+interface:
+  display_name: "竞争对标拆解"
+  short_description: "比较公开竞争样本并设计原创、可验证且不越界的增长实验"
+  default_prompt: "使用 $competitive-benchmark-analysis 比较直接竞品与替代方案，并形成有证据、可调试的原创实验候选。"

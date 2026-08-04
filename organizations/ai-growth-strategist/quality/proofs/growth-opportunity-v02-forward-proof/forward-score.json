@@ -1,0 +1,21 @@
+{
+  "planExpectation": "0/6 -> 6/6",
+  "observedResult": "2/6 -> 6/6",
+  "implementationNote": "批准计划预估baseline为0/6；独立实测baseline已有吸引力与可信度、反证两项，因此仅四项由false变true，未人为改写baseline或收窄评分。",
+  "baselineScore": {
+    "separatesFactsInferencesUnknowns": false,
+    "coversMarketDemandIndustryGrowthSpace": false,
+    "usesAttractivenessAndConfidence": true,
+    "definesCounterEvidence": true,
+    "hasBoundedExperiment": false,
+    "respectsOrganizationBoundaries": false
+  },
+  "forwardScore": {
+    "separatesFactsInferencesUnknowns": true,
+    "coversMarketDemandIndustryGrowthSpace": true,
+    "usesAttractivenessAndConfidence": true,
+    "definesCounterEvidence": true,
+    "hasBoundedExperiment": true,
+    "respectsOrganizationBoundaries": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "competitive-benchmark-analysis",
+  "enterpriseId": "demo-enterprise",
+  "taskId": "20260728-002-benchmark-test",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "matched",
+    "evidencePath": "tasks/demo/evidence/knowledge_context.json"
+  },
+  "scope": {
+    "growthOpportunityRef": "opp-001",
+    "objective": "提炼可迁移的公开获客机制",
+    "productOrService": "演示用企业经营培训",
+    "region": "中国",
+    "timeRange": "2026-Q3",
+    "brandBriefVersion": "brand-brief-v1",
+    "constraints": ["不复制竞品资产"]
+  },
+  "evidence": [
+    {"id":"ev-a","type":"public_source","claim":"演示竞品 A 使用诊断内容","sourceReference":"https://example.com/a","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"演示用公开样本"},
+    {"id":"ev-b","type":"public_source","claim":"演示竞品 B 使用研讨会报名","sourceReference":"https://example.com/b","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"演示用公开样本"},
+    {"id":"ev-c","type":"public_source","claim":"演示竞品 C 使用案例教育","sourceReference":"https://example.com/c","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"演示用公开样本"},
+    {"id":"ev-alt","type":"public_source","claim":"演示替代方案使用体验课","sourceReference":"https://example.com/d","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"演示用公开样本"},
+    {"id":"ev-inference","type":"inference","claim":"诊断内容到自愿报名可能迁移","sourceReference":"ev-a+ev-b","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"演示用待验证机制"}
+  ],
+  "benchmarks": [
+    {"id":"bench-a","name":"演示竞品 A","kind":"direct","evidenceRefs":["ev-a"],"observedPositioning":"仅记录公开表达","productStrategy":"仅记录公开产品结构","contentMechanism":"诊断教育内容","acquisitionChannels":["公开内容"],"observableCustomerPath":"内容到自愿报名，后续成交未知","unknowns":["收入","转化率"]},
+    {"id":"bench-b","name":"演示竞品 B","kind":"direct","evidenceRefs":["ev-b"],"observedPositioning":"仅记录公开表达","productStrategy":"仅记录公开产品结构","contentMechanism":"研讨会内容","acquisitionChannels":["公开活动"],"observableCustomerPath":"活动到自愿报名，后续成交未知","unknowns":["收入","转化率"]},
+    {"id":"bench-c","name":"演示竞品 C","kind":"direct","evidenceRefs":["ev-c"],"observedPositioning":"仅记录公开表达","productStrategy":"仅记录公开产品结构","contentMechanism":"案例教育内容","acquisitionChannels":["公开内容"],"observableCustomerPath":"案例到自愿咨询，后续成交未知","unknowns":["收入","转化率"]},
+    {"id":"bench-alt","name":"演示替代方案","kind":"alternative","evidenceRefs":["ev-alt"],"observedPositioning":"仅记录公开表达","productStrategy":"仅记录公开产品结构","contentMechanism":"体验课内容","acquisitionChannels":["公开课程"],"observableCustomerPath":"体验到自愿报名，后续成交未知","unknowns":["收入","转化率"]}
+  ],
+  "insights": [
+    {
+      "id":"insight-001",
+      "evidenceRefs":["ev-a","ev-b","ev-inference"],
+      "transferableMechanism":"诊断内容到自愿报名",
+      "ownBrandAdaptation":"使用本企业已批准承诺和原创案例",
+      "whyFit":"企业已有内容与研讨会能力",
+      "doNotCopy":["名称","口号","核心文案","视觉身份","案例"],
+      "antiCopyChecks":{"copiesName":false,"copiesSlogan":false,"copiesCoreCopy":false,"copiesVisualIdentity":false,"copiesCases":false,"brandConfusionRisk":"none","intellectualPropertyRisk":"none"},
+      "unknowns":["竞品真实转化与经营数据未知"]
+    }
+  ],
+  "experiments": [
+    {"id":"experiment-001","insightRef":"insight-001","hypothesis":"原创诊断内容可能提高报名率","method":"测试两个原创内容入口和一个已批准 CTA","metric":"每次送达的报名率","target":"相对提升至少 20%","maximumDays":30,"maximumCost":"不新增付费投放","stopConditions":["投诉上升","品牌复核拒绝该表达"]}
+  ],
+  "boundaryChecks":{"changesEnterpriseStrategy":false,"changesBrandPositioning":false,"changesPricePolicy":false,"changesDealRules":false},
+  "collaborationRequests":[{"targetOrganization":"ai-brand-officer","reason":"复核品牌混淆与受保护表达风险"}],
+  "review":{"baselineMetrics":["当前研讨会报名率"],"reviewAt":"2026-09-30T00:00:00.000Z","decisionRules":["达到目标才扩大","验证失败即停止"]}
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "proofId": "competitive-benchmark-v02-forward-proof",
+  "role": "independent-forward-business-role",
+  "taskName": "/root/competitive_benchmark_v02_impl/competitive_benchmark_fresh_round2j",
+  "writerTask": "/root/competitive_benchmark_v02_impl/competitive_benchmark_fresh_round2j",
+  "forkTurns": "none",
+  "readSkill": true,
+  "readWorkflow": true,
+  "readTests": false,
+  "readExamples": false,
+  "readTemplates": false,
+  "readBaseline": false,
+  "readOldForward": false,
+  "allowedReads": [
+    "organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md",
+    "organizations/ai-growth-strategist/workflows/COMPETITIVE_BENCHMARK_ANALYSIS.md",
+    "organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/shared-artifacts/growth-opportunity-brief/v1.json",
+    "organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/knowledge-context.json",
+    "organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt"
+  ],
+  "forbiddenReads": [
+    "tests",
+    "scripts",
+    "examples",
+    "templates",
+    "baselines",
+    "proofs",
+    "invalid-history",
+    "checkpoints",
+    "round2i",
+    "old-temp-and-proof",
+    "network"
+  ],
+  "trustedPaths": {
+    "upstream": "business-projects/ent-benchmark/20260730-001-benchmark/shared-artifacts/growth-opportunity-brief/v1.json",
+    "receipt": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/knowledge-context.json",
+    "source": "business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt"
+  },
+  "trustedDigests": {
+    "upstreamSha256": "16bb5e728dcca2bcc9ede982ba0c3ca2c182e404cefdf2336241f04563444022",
+    "receiptSha256": "440a037e5f1ddbc20d8b24110e340b6ad943e1e3a60c42b7cec93096ede88863",
+    "sourceSha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9"
+  },
+  "receiptSnapshot": {
+    "schemaVersion": 2,
+    "status": "no_hit",
+    "sources": []
+  },
+  "classifierContract": {
+    "mode": "anchored-context-routed-complete-statement-v3",
+    "regression": "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_eighth_round.test.mjs",
+    "normalization": "NFKC-strip-Cf-before-metric-detection",
+    "coverage": "audit-all-business-text-including-no-metric-before-allow",
+    "allowModel": "anchored-complete-consumption-no-word-bag",
+    "evidenceRouting": "public_fact-source-bound-observation-scope_fact-boundary-only",
+    "subjectPolicy": "structured-sample-competitor-or-possessive-only",
+    "trimPolicy": "terminal-dot-question-exclamation-semicolon-whitespace-only-preserve-symbol-residue",
+    "hypothesisBoundary": "reject-external-business-rank-direction-value-before-exemptions",
+    "yearPolicy": "only-explicit-as-of-for-19xx-20xx-is-non-business-value",
+    "attackFamilies": {
+      "noMetricExternal": 22,
+      "arbitraryChineseUnknownSubjects": 7,
+      "symbolResidue": 12,
+      "previousFixed": 65,
+      "deterministicFuzz": 256
+    }
+  },
+  "promptDigest": "fab380e8d0fd293c57da00317dc81f734ded3997295f89a3f432bd3bccdb6fea",
+  "rawResultDigest": "408a96edf8211c1f298c0db025969fb24c70b08e09c986f9f116d1f839ea81c1",
+  "rawForwardDigest": "408a96edf8211c1f298c0db025969fb24c70b08e09c986f9f116d1f839ea81c1",
+  "rawCandidateDigest": "254b8a283557b97439ea25cc4f56c25666983080e62e9f80b7b38bfa18eb3e54",
+  "canonicalForwardDigest": "408a96edf8211c1f298c0db025969fb24c70b08e09c986f9f116d1f839ea81c1",
+  "canonicalCandidateDigest": "254b8a283557b97439ea25cc4f56c25666983080e62e9f80b7b38bfa18eb3e54",
+  "canonicalAugmentation": "three-bounded-field-repairs-synchronized-forward-and-candidate",
+  "outputPaths": {
+    "rawForward": "temp/growth-strategist-v02-implementation/fresh-forward-round2j/raw-forward.md",
+    "rawCandidate": "temp/growth-strategist-v02-implementation/fresh-forward-round2j/raw-candidate.json"
+  },
+  "writerSummary": "The same fresh fork-none business role wrote both artifacts from the five-file allowlist under the eighth-round context-routed complete-statement contract; root validation performed three bounded synchronized field repairs before formal CLI exit 0.",
+  "uncertainties": [
+    "Knowledge receipt status was no_hit and its schema v2 sources array was empty.",
+    "Each direct sample had one fixed public observation; private performance and post-entry paths remain unknown.",
+    "The fresh role did not run the formal validator; root validation found three bounded field-level contract mismatches."
+  ],
+  "repairChain": [
+    {
+      "attempt": 0,
+      "candidateSha256": "84557acb42980dec0d5190fa4c97533aade4a211c52ee38c2917ab6ddb76afb6",
+      "forwardSha256": "a279d68959979776fb7efd7f827ae594b46d0c69b224ee93c59826f26c84e164",
+      "exitCode": 1,
+      "result": "formal CLI rejected the alternative observable-path inference because it was not a fully anchored mechanism statement"
+    },
+    {
+      "attempt": 1,
+      "candidateSha256": "e8436ccbdb53a3bd0bebb3935bcdd83761de0e4e26cff296ef0f5c7b55a9bb57",
+      "forwardSha256": "98718680e40837b430625dae9d78303d27e125bdc21e4f690c6c595d6f5c3117",
+      "exitCode": 1,
+      "result": "formal CLI rejected an unanchored scope constraint describing the absence of external action"
+    },
+    {
+      "attempt": 2,
+      "candidateSha256": "418771510d3157ceff57eeab6e232ea9452a310eb88805a88bea30e2e0ec2aa3",
+      "forwardSha256": "98718680e40837b430625dae9d78303d27e125bdc21e4f690c6c595d6f5c3117",
+      "exitCode": 1,
+      "result": "formal CLI rejected transfer surfaceAction; a full field audit found six remaining unanchored internal strings"
+    },
+    {
+      "attempt": 3,
+      "candidateSha256": "254b8a283557b97439ea25cc4f56c25666983080e62e9f80b7b38bfa18eb3e54",
+      "forwardSha256": "408a96edf8211c1f298c0db025969fb24c70b08e09c986f9f116d1f839ea81c1",
+      "exitCode": 0,
+      "result": "candidate passed formal CLI after the third and final synchronized repair; total content repairs 3 of maximum 3"
+    }
+  ],
+  "cliValidation": {
+    "exitCode": 0,
+    "commandProfile": "formal-competitive-v2-upstream-receipt-trusted-flags-original-utf8-after-three-bounded-repairs",
+    "trustedFlagNames": [
+      "--expected-enterprise-id",
+      "--expected-business-project-id",
+      "--expected-task-id",
+      "--expected-run-id",
+      "--project-root",
+      "--expected-upstream-artifact-id",
+      "--expected-upstream-version",
+      "--expected-upstream-sha256",
+      "--expected-receipt-relative-path",
+      "--expected-receipt-status",
+      "--expected-receipt-sha256",
+      "--reference-at"
+    ],
+    "stdout": "{\"ok\":true,\"capabilityId\":\"competitive-benchmark-analysis\",\"schemaVersion\":2,\"status\":\"candidate\"}",
+    "validatedAt": "2026-07-31T03:24:44+08:00"
+  },
+  "rootInvocationObservedBy": "/root/competitive_benchmark_v02_impl",
+  "isCryptographicIsolationProof": false,
+  "attestationScope": "fixed-declaration-plus-root-spawn-record-non-cryptographic"
+}

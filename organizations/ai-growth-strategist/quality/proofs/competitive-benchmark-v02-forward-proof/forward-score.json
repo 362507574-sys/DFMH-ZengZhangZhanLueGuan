@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "proofId": "competitive-benchmark-v02-forward-proof",
+  "baselineScore": {
+    "hasThreeDirectAndOneAlternative": false,
+    "separatesPublicFactsInferenceUnknowns": false,
+    "coversFiveLayers": false,
+    "avoidsPrivatePerformanceClaims": true,
+    "extractsMechanismBeforeAdaptation": true,
+    "passesCopyBrandIpChecks": false,
+    "createsOriginalExperiment": false
+  },
+  "forwardScore": {
+    "hasThreeDirectAndOneAlternative": true,
+    "separatesPublicFactsInferenceUnknowns": true,
+    "coversFiveLayers": true,
+    "avoidsPrivatePerformanceClaims": true,
+    "extractsMechanismBeforeAdaptation": true,
+    "passesCopyBrandIpChecks": true,
+    "createsOriginalExperiment": true
+  },
+  "baselineTrueCount": 2,
+  "forwardTrueCount": 7,
+  "scoringBasis": "Baseline is replayed from immutable external baseline files. Forward score is derived from the eighth-round context-routed complete-statement validated candidate and bound to concrete text in the round2j Markdown after three bounded synchronized field repairs.",
+  "bindings": {
+    "hasThreeDirectAndOneAlternative": {
+      "candidatePointer": "/samples",
+      "markdownNeedle": "恰好选择三个直接样本和一个显式替代方案"
+    },
+    "separatesPublicFactsInferenceUnknowns": {
+      "candidatePointer": "/samples/0/layers",
+      "markdownNeedle": "| 分析层 | 公开事实 | 机制推断 | 未知 |"
+    },
+    "coversFiveLayers": {
+      "candidatePointer": "/samples/0/layers",
+      "markdownNeedle": "| 可观察客户路径 | A每周3篇公众号文章并公开9.9元资料包。"
+    },
+    "avoidsPrivatePerformanceClaims": {
+      "candidatePointer": "/samples/0/privateUnknowns",
+      "markdownNeedle": "不推断私有成交表现"
+    },
+    "extractsMechanismBeforeAdaptation": {
+      "candidatePointer": "/transfers/0/underlyingMechanism",
+      "markdownNeedle": "底层机制：降低信息理解成本并形成可观察行动入口"
+    },
+    "passesCopyBrandIpChecks": {
+      "candidatePointer": "/transfers/0/antiCopyChecks",
+      "markdownNeedle": "品牌混淆风险：`none`"
+    },
+    "createsOriginalExperiment": {
+      "candidatePointer": "/transfers/0/experiment",
+      "markdownNeedle": "## 有界内部实验"
+    }
+  }
+}

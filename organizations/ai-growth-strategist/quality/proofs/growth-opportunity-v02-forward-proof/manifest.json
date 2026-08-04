@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "proofId": "growth-opportunity-v02-forward-proof",
+  "files": [
+    {
+      "path": "canonical-baseline.md",
+      "sha256": "70a1eb55aa8c294c63a2de7b356048d5ba63a107991e90cc802f587a49f09305"
+    },
+    {
+      "path": "canonical-forward.md",
+      "sha256": "413af217dafb9556c07b4d7ad287ee27cb273399d59c3fb28b6a63edf04a8160"
+    },
+    {
+      "path": "canonical-candidate.json",
+      "sha256": "1f1c3ae878bd29e032f24dc1fa373328df06c0c1703e9db30cfd259e2050863b"
+    },
+    {
+      "path": "forward-score.json",
+      "sha256": "fbeed4e9d1b75210651d4f32f72991f6ccefaeac816002a59b94c4e9303d05f1"
+    },
+    {
+      "path": "forward-invocation.json",
+      "sha256": "ef8a9c8b964a8b3db5bb525406550d263eef7078aeaf7a1a8a4bad2259772aff"
+    },
+    {
+      "path": "canonical-scenario-input.txt",
+      "sha256": "3f7379fbc2a383f3beb45f6389dab56bac28729a7eb0fad8764fe84c31b17db0"
+    },
+    {
+      "path": "exact-invocation-prompt.txt",
+      "sha256": "3a8248da01ff5376dce23004f91e7b4927efa5e39621ac775759091493de2ba4"
+    }
+  ]
+}

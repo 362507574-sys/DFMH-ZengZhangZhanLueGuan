@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "growth-opportunity-analysis",
+  "enterpriseId": "<enterprise-id>",
+  "businessProjectId": "<business-project-id>",
+  "taskId": "<task-id>",
+  "runId": "<run-id>",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "degraded",
+    "evidencePath": "<knowledge-context-evidence-path>",
+    "evidenceSha256": "<lowercase-sha256>"
+  },
+  "scope": {
+    "businessGoal": "<business-goal>",
+    "productOrService": "<product-or-service>",
+    "region": "<region>",
+    "timeRange": "<time-range>",
+    "constraints": [
+      "<constraint>"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "<evidence-id>",
+      "type": "enterprise_fact",
+      "claim": "<fact-inference-hypothesis-or-unknown>",
+      "sourceReference": "<source-reference>",
+      "sourceVersion": "<source-version>",
+      "sourceSha256": "<lowercase-sha256>",
+      "observedAt": "<canonical-iso-timestamp>",
+      "appliesTo": "<scope>",
+      "confidence": "B",
+      "polarity": "support",
+      "conflictReferences": []
+    }
+  ],
+  "analysisBranches": [
+    {
+      "id": "market-trends",
+      "status": "limited",
+      "findings": ["<finding>"],
+      "evidenceRefs": ["<evidence-id>"],
+      "inferences": ["<inference>"],
+      "unknowns": ["<unknown>"]
+    },
+    {
+      "id": "user-demand",
+      "status": "limited",
+      "findings": ["<finding>"],
+      "evidenceRefs": ["<evidence-id>"],
+      "inferences": ["<inference>"],
+      "unknowns": ["<unknown>"]
+    },
+    {
+      "id": "industry-opportunity",
+      "status": "limited",
+      "findings": ["<finding>"],
+      "evidenceRefs": ["<evidence-id>"],
+      "inferences": ["<inference>"],
+      "unknowns": ["<unknown>"]
+    },
+    {
+      "id": "enterprise-growth-space",
+      "status": "limited",
+      "findings": ["<finding>"],
+      "evidenceRefs": ["<evidence-id>"],
+      "inferences": ["<inference>"],
+      "unknowns": ["<unknown>"]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "<opportunity-id>",
+      "title": "<title>",
+      "targetSegment": "<target-segment>",
+      "customerProblem": "<customer-problem>",
+      "scenario": "<scenario>",
+      "mechanism": "<growth-mechanism>",
+      "evidenceRefs": ["<fact-evidence-id>", "<second-evidence-id>"],
+      "counterEvidenceRefs": ["<counter-evidence-id>"],
+      "unknowns": ["<unknown>"],
+      "attractiveness": {
+        "demandStrength": 0,
+        "enterpriseFit": 0,
+        "reachability": 0,
+        "potentialValue": 0,
+        "timing": 0,
+        "competitionAndEffort": 0,
+        "total": 0
+      },
+      "confidence": {
+        "grade": "D",
+        "reason": "<reason>",
+        "evidenceTypeCount": 1,
+        "hasEnterpriseBehaviorData": false
+      },
+      "experiment": {
+        "id": "<experiment-id>",
+        "hypothesis": "<hypothesis>",
+        "experimentObject": "<experiment-object>",
+        "control": "<control>",
+        "sample": "<sample>",
+        "metric": "<primary-metric>",
+        "secondaryMetrics": ["<secondary-metric>"],
+        "riskMetrics": ["<risk-metric>"],
+        "baseline": 0,
+        "target": 1,
+        "maximumDays": 30,
+        "maximumCost": "<maximum-cost>",
+        "stopConditions": ["<stop-condition>"],
+        "dataCollectionMethod": "<data-collection-method>",
+        "reviewAt": "<canonical-iso-timestamp>",
+        "externalActions": ["publish_content"],
+        "requiresApproval": true
+      }
+    }
+  ],
+  "priorityMap": [
+    {
+      "opportunityId": "<opportunity-id>",
+      "attractiveness": 0,
+      "confidence": "D",
+      "decision": "evidence_first"
+    }
+  ],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [],
+  "debugReport": {
+    "status": "passed_with_unknowns",
+    "diagnostics": [
+      {
+        "code": "ok",
+        "severity": "info",
+        "field": "<field>",
+        "explanation": "<explanation>",
+        "recoveryAction": "<recovery-action>"
+      }
+    ],
+    "remainingUnknowns": ["<unknown>"]
+  },
+  "review": {
+    "baselineMetrics": ["<baseline-metric>"],
+    "reviewAt": "<canonical-iso-timestamp>",
+    "decisionRules": [
+      "<success-rule>",
+      "<stop-rule>"
+    ]
+  }
+}

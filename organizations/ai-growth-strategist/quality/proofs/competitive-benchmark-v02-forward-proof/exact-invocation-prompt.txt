@@ -1,0 +1,72 @@
+You are the fresh independent business writer for the AI Growth Strategist competitive-benchmark-analysis v0.2 eighth-round proof.
+
+Isolation:
+- forkTurns is none.
+- Read exactly these five files and no others:
+  1. organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md
+  2. organizations/ai-growth-strategist/workflows/COMPETITIVE_BENCHMARK_ANALYSIS.md
+  3. organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/shared-artifacts/growth-opportunity-brief/v1.json
+  4. organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/knowledge-context.json
+  5. organizations/ai-growth-strategist/fixtures/cbv2-proof-root/business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt
+- Do not read tests, scripts, examples, templates, baselines, proofs, invalid history, checkpoints, previous outputs, or the network.
+- Do not read or reuse any round2i file, text, answer, repair, attempt, or archive.
+- You may re-read only the two files you create below to check JSON parsing and Markdown/JSON consistency.
+
+Fixed trusted context supplied by the control center:
+- enterpriseId: ent-benchmark
+- businessProjectId: 20260730-001-benchmark
+- taskId: task-benchmark
+- runId: run-benchmark
+- referenceAt: 2026-07-30T23:59:59.000Z
+- expected upstream artifactId/version/SHA-256:
+  growth-opportunity-brief / 1 /
+  16bb5e728dcca2bcc9ede982ba0c3ca2c182e404cefdf2336241f04563444022
+- expected knowledge receipt status/path/SHA-256:
+  no_hit
+  business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/knowledge-context.json
+  440a037e5f1ddbc20d8b24110e340b6ad943e1e3a60c42b7cec93096ede88863
+- canonical public source path/SHA-256:
+  business-projects/ent-benchmark/20260730-001-benchmark/organizations/ai-growth-strategist/runs/run-benchmark/evidence/sources/canonical-scenario-input.txt
+  825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9
+
+Create exactly these two outputs:
+1. temp/growth-strategist-v02-implementation/fresh-forward-round2j/raw-forward.md
+2. temp/growth-strategist-v02-implementation/fresh-forward-round2j/raw-candidate.json
+
+Business and machine requirements:
+- Produce a complete, original competitive benchmark with exactly three direct samples and one explicit alternative, all five analysis layers, public facts/inferences/unknowns separated, mechanism-first transfer, anti-copy/brand/IP checks, bounded internal experiments, debug/review records, and zero external action.
+- Build schemaVersion 2 JSON exactly from the Skill and Workflow contract. Do not add fields.
+- Before writing, perform a field-by-field self-check without reading any validator or test:
+  - every evidence, sample, transfer, and experiment id must be a lowercase safe id matching `[a-z0-9][a-z0-9-]{2,119}`, and every reference must use the same lowercase id;
+  - every alternative `layer.publicFacts` value is still audited as `public_fact`, so write a fully anchored public-observation statement rather than copying the alternative `scope_fact` sentence;
+  - `scope.objective` and `scope.constraints` must describe only the enterprise's internal task boundary; do not combine an external subject with a private metric there;
+  - each transfer `surfaceAction`, `underlyingMechanism`, `enterpriseFit`, and `originalImplementation` must independently use the allowed anchored internal-action or mechanism grammar, with no external-subject business conclusion;
+  - inspect identity and trusted paths, all ids and references, evidence, every sample layer bucket, all transfer and experiment fields, debug, and review before saving either output.
+- Preserve all three supplied projectRoot-relative trusted paths and supplied digests exactly in both outputs.
+- knowledgeContext must use schema-v2 no_hit semantics with no fabricated knowledge source.
+- Every public_fact evidence claim must be text found in the canonical public source and bind the canonical source path and SHA. A scope_fact may only define the explicit alternative/comparison baseline and must not contain an external business conclusion.
+- maximumCost must be a non-empty string describing a future internal budget ceiling, not a historical cost.
+- Keep private revenue, profit, conversion, deal, repurchase, ROI and ROAS unknown unless supported by public evidence. Include the exact truthful Markdown scope statement `不推断私有成交表现` and exact `外部动作：无`.
+- Apply the eighth-round complete-statement classifier contract to every business string:
+  - normalize Unicode with NFKC and remove every Cf format character before metric detection;
+  - do not treat metricDetected=false as automatically safe;
+  - route public_fact and scope_fact separately;
+  - public_fact may contain only source-bound public observable actions;
+  - scope_fact may contain only the explicit comparison scope or alternative baseline;
+  - in non-public inference, hypothesis, review, debug and browser-style notes, external-subject business conclusions, rankings, directions and business values are denied by default;
+  - preserve only anchored public-observation, mechanism-inference and internal-operational positive grammar;
+  - for private-metric unknown statements, allow no subject or a structured sample/competitor identifier and explicit possessive only; never use an arbitrary Chinese-subject prefix fallback;
+  - trim only terminal `.。!?！？;；` and whitespace; never remove or discard Unicode symbols, `+`, `-`, `/`, arrows, emoji or `%`;
+  - each allowed statement must be completely consumed; any subject residue, external conclusion, symbol residue, ordinary value, percentage, change or ranking fails closed;
+  - allow complete unknown forms including `暂无数据`, `尚不清楚`, `未披露`, `is unavailable`, and `not publicly disclosed` without turning them into a word bag;
+  - preserve relationship denial, explicit all/both unknown, reasonable as-of/for 19xx/20xx year forms, and a bounded internal future enterprise experiment with no external subject.
+- Prohibit the full eighth-round families in evidence scope_fact, transfer/review/debug hypothesis and browser-style inference:
+  1. 22 no-private-metric external conclusions, including 竞品稳居榜首, 竞争对手达到99%, 对手增长3倍, Competitor dominates, Peer grew 3x, Future competitor dominates, Internal hypothesis peer outperforms, Cf-split and NFKC-fullwidth variants.
+  2. Seven arbitrary Chinese-subject private-metric unknown claims, including 行业标杆成交率未知, 市场王者利润率未知, 独占鳌头复购率未知, 行业翘楚收入表现未知, 市场霸主GMV数据未知, 垄断者收入表现未知, 赛道标杆转化率未知.
+  3. Twelve leading/trailing residue variants using `+`, `/`, `↑`, `↗`, `↘`, `→`, `🚀`, and `%`, including `GMV不代表利润+`.
+- Preserve the previous 65 fixed attacks as rejected.
+- Allow exactly truthful complete unknown statements such as `收入暂无数据`, `利润尚不清楚`, `复购率未披露`, `Revenue is unavailable`, and `Profit is not publicly disclosed`.
+- Do not execute publication, advertising, customer contact, price changes, deal-rule changes, brand commitments, or external-system writes.
+- Do not claim real private outcomes or turn this simulation into a production recommendation.
+
+Write both files directly. Return only a concise completion report naming the writer task and the two output paths, plus any honest uncertainty.

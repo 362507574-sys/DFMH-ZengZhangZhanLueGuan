@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "competitive-benchmark-analysis",
+  "exampleScenario": "比较三家公开企业服务播客与一个线下同行社群，不使用固定前向测试场景。",
+  "samplePlan": [
+    {
+      "id": "podcast-a",
+      "kind": "direct",
+      "selectionReason": "公开节目目录、更新节奏和行动入口可核验。"
+    },
+    {
+      "id": "podcast-b",
+      "kind": "direct",
+      "selectionReason": "公开内容结构与嘉宾机制可核验。"
+    },
+    {
+      "id": "podcast-c",
+      "kind": "direct",
+      "selectionReason": "公开产品目录与节目承接可核验。"
+    },
+    {
+      "id": "offline-community",
+      "kind": "alternative",
+      "selectionReason": "解决相同信任问题但使用线下同行连接机制。"
+    }
+  ],
+  "fiveLayers": [
+    "positioning",
+    "productStrategy",
+    "contentMechanism",
+    "acquisitionChannels",
+    "observableCustomerPath"
+  ],
+  "knowledgeReceiptExample": {
+    "schemaVersion": 2,
+    "status": "no_hit",
+    "sources": [],
+    "limitationRequired": true
+  },
+  "transferExample": {
+    "surfaceAction": "固定更新访谈节目",
+    "underlyingMechanism": "借助连续主题与第三方经验降低理解成本",
+    "enterpriseFit": "企业已有真实顾问经验且具备取得案例授权的流程",
+    "originalImplementation": "使用企业自己的经营诊断框架制作匿名方法拆解栏目",
+    "doNotCopy": ["名称", "口号", "核心文案", "视觉身份", "案例"],
+    "experimentBoundary": "先生成内部候选；发布必须等待帝王审批"
+  },
+  "note": "该演示只说明异题推理结构，不是可提交候选；正式候选需真实来源文件、SHA-256、项目身份和完整实验字段。"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "内容与客户增长"
+  short_description: "v0.2：用精确上游版本、许可门禁和六阶段生命周期设计三渠道增长候选"
+  default_prompt: "使用 $content-customer-growth v0.2 设计三渠道月计划和六阶段客户生命周期；精确绑定四个上游成果版本与 SHA-256，禁止自动群发和主动联系，所有发布、付费、触达、价格、退款及成交动作保持 awaiting_approval。"

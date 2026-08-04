@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "growth-opportunity-analysis",
+  "enterpriseId": "<enterprise-id>",
+  "taskId": "<YYYYMMDD-NNN-task-name>",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "matched",
+    "evidencePath": "<organization-task-evidence-path>"
+  },
+  "scope": {
+    "businessGoal": "<goal>",
+    "productOrService": "<offer>",
+    "region": "<region>",
+    "timeRange": "<time-range>",
+    "constraints": [
+      "<constraint>"
+    ]
+  },
+  "evidence": [],
+  "opportunities": [],
+  "priorityOrder": [],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [],
+  "review": {
+    "baselineMetrics": [],
+    "reviewAt": "<ISO-8601>",
+    "decisionRules": []
+  }
+}

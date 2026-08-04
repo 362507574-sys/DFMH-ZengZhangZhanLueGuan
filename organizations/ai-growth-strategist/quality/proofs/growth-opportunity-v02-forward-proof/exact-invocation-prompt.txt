@@ -1,0 +1,1 @@
+你是独立业务分析验收角色。不要读取 organizations/ai-growth-strategist/tests、examples、templates，也不要读取旧 temp/growth-strategist-v02-implementation/forward。固定场景：企业有2000名许可邮件订阅用户；最近8周经营诊断主题点击率18%，其他主题7%；两场研讨会共报名240、到场96、有效咨询14；没有个人级来源归因。先不用专属增长机会技能写 baseline；再只读取 growth-opportunity-analysis/SKILL.md 与 GROWTH_OPPORTUNITY_ANALYSIS.md 写 forward。避免个人归因、保证增长和自动外部行动，保留反证、未知、吸引力与可信度分离、有界实验和停止条件。

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "organizations": [
+    {
+      "id": "ai-growth-strategist",
+      "displayName": "AI增长战略官",
+      "aliases": [
+        "增长战略官",
+        "增长官"
+      ],
+      "systemName": "增长获客系统",
+      "status": "designing",
+      "acceptsFormalTasks": false,
+      "directory": "organizations/ai-growth-strategist",
+      "coreSkills": [
+        {
+          "id": "growth-opportunity-analysis",
+          "name": "增长机会分析",
+          "status": "designing"
+        },
+        {
+          "id": "competitive-benchmark-analysis",
+          "name": "竞争对标拆解",
+          "status": "designing"
+        },
+        {
+          "id": "content-customer-growth",
+          "name": "内容与客户增长",
+          "status": "designing"
+        }
+      ]
+    }
+  ]
+}

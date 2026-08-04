@@ -1,0 +1,34 @@
+{
+  "schemaVersion":1,
+  "capabilityId":"content-customer-growth",
+  "enterpriseId":"demo-enterprise",
+  "taskId":"20260728-003-content-growth-test",
+  "status":"candidate",
+  "knowledgeContext":{"status":"matched","evidencePath":"tasks/demo/evidence/knowledge_context.json"},
+  "scope":{"growthOpportunityRef":"opp-001","objective":"提升自愿研讨会报名与客户培育","channels":["newsletter","public-content"],"timeRange":"2026-Q3","constraints":["禁止自动外联","不新增付费投放"]},
+  "evidence":[
+    {"id":"ev-behavior","type":"behavior_data","claim":"演示诊断内容点击率高于当前基线","sourceReference":"demo-content-report-q2","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"已同意接收内容的演示受众"},
+    {"id":"ev-inference","type":"inference","claim":"诊断教育可能提高自愿报名","sourceReference":"ev-behavior","observedAt":"2026-07-28T00:00:00.000Z","appliesTo":"有界内容实验"}
+  ],
+  "brandBrief":{"version":"brand-brief-v1","effectiveAt":"2026-07-28T00:00:00.000Z","valueProposition":"帮助经营者把问题转成行动","allowedClaims":["说明可观察方法与限制"],"forbiddenClaims":["保证增长","保证成交"],"reviewTriggers":["新承诺","新故事","新视觉","重大活动"]},
+  "contentPlan":[
+    {"id":"content-001","channel":"newsletter","audienceStage":"aware","objective":"自愿报名研讨会","evidenceRefs":["ev-behavior","ev-inference"],"format":"诊断文章","topic":"三个经营瓶颈","callToAction":"自愿报名研讨会","brandBriefVersion":"brand-brief-v1","frequencyLimit":"十四天内最多两次"}
+  ],
+  "customerLifecycle":[
+    {"stage":"aware","entrySignal":"已同意订阅者阅读公开内容","allowedActions":["展示教育内容"],"exitSignal":"自愿报名或退出"},
+    {"stage":"nurture","entrySignal":"自愿报名研讨会","allowedActions":["发送已同意的活动提醒"],"exitSignal":"明确询盘、不活跃或退出"}
+  ],
+  "consentPolicy":{"required":true,"purpose":"发送用户请求的教育内容和活动提醒","retentionDays":90,"optOutMechanism":"一键退订并记录人工拒绝","refusalStopsContact":true,"noAutomatedOutreach":true},
+  "dealHandoff":{"version":"deal-handoff-v1","triggers":["明确请求咨询或报价"],"nonTriggers":["阅读","点击","被动到场"],"customerReferenceRule":"只使用内部客户引用，不包含原始 PII","requiredFields":["enterpriseId","taskId","handoffVersion","consentStatus","consentPurpose","retentionUntil","optOutStatus","source","touchpoints","customerReference","segmentNeedStage","evidenceReferences","knownUnknowns","promisesLimitsRisksNextActions"],"feedbackFields":["acceptedAt","rejectionReason","dealStage","outcome"]},
+  "repurchase":{"eligibilitySignals":["服务完成且明确表达兴趣"],"exclusions":["活跃投诉","已退出","退款未解决"],"contentActions":["发送用户请求的价值复盘内容"],"dealHandoffTrigger":"明确续费或复购询盘"},
+  "experiments":[
+    {"id":"experiment-001","hypothesis":"证据型内容可能提高自愿报名","method":"在相同发送条件下测试两个原创主题","metric":"每次送达的报名率","target":"相对提升至少 20%","maximumDays":30,"maximumCost":"不新增付费投放","stopConditions":["投诉上升","退出率高于对照"]}
+  ],
+  "safetyChecks":{"fakeScarcity":false,"hiddenFees":false,"coercion":false,"vulnerableGroupTargeting":false,"fabricatedProof":false},
+  "boundaryChecks":{"changesEnterpriseStrategy":false,"changesBrandPositioning":false,"changesPricePolicy":false,"changesDealRules":false},
+  "collaborationRequests":[
+    {"targetOrganization":"ai-brand-officer","reason":"仅在触发品牌复核项时复核"},
+    {"targetOrganization":"ai-deal-officer","reason":"承接明确询盘并返回版本化结果"}
+  ],
+  "review":{"baselineMetrics":["当前报名率与退出率"],"reviewAt":"2026-09-30T00:00:00.000Z","decisionRules":["达到目标才扩大","安全或同意失败即停止"]}
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "detailHeadings": [
+    "核心判断",
+    "深度分析",
+    "依据与边界",
+    "落地建议"
+  ],
+  "fourthLevelHeadings": {
+    "深度分析": [
+      "关键变量",
+      "推导逻辑"
+    ],
+    "依据与边界": [
+      "已知事实",
+      "待验证信息"
+    ],
+    "落地建议": [
+      "执行动作",
+      "验收指标",
+      "风险与停止条件"
+    ]
+  },
+  "organizations": [
+    {
+      "organizationId": "ai-growth-strategist",
+      "displayName": "AI增长战略官",
+      "systemName": "增长获客系统",
+      "sourceImageSha256": "bcdbf508f339f348eecbbb26ce176a71346ebee69419107f338c190822908ed2",
+      "skills": [
+        {
+          "skillId": "growth-opportunity-analysis",
+          "displayName": "增长机会分析技能",
+          "outputTitle": "增长机会分析",
+          "sections": [
+            "市场趋势",
+            "用户需求",
+            "行业机会",
+            "增长空间"
+          ]
+        },
+        {
+          "skillId": "competitive-benchmark-analysis",
+          "displayName": "竞争对标拆解技能",
+          "outputTitle": "竞争对标拆解",
+          "sections": [
+            "竞争对手定位",
+            "产品策略",
+            "内容打法",
+            "获客渠道",
+            "成交路径"
+          ]
+        },
+        {
+          "skillId": "content-customer-growth",
+          "displayName": "内容与客户增长技能",
+          "outputTitle": "内容与客户增长",
+          "sections": [
+            "短视频策划",
+            "小红书种草",
+            "私域运营",
+            "客户培育",
+            "复购设计"
+          ]
+        }
+      ]
+    }
+  ]
+}

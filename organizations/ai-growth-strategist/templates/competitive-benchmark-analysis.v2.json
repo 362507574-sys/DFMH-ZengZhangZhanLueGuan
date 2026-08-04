@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "capabilityId": "competitive-benchmark-analysis",
+  "templateOnly": true,
+  "requiredEnvelopeFields": [
+    "enterpriseId",
+    "businessProjectId",
+    "taskId",
+    "runId",
+    "status",
+    "knowledgeContext"
+  ],
+  "requiredSections": [
+    "scope",
+    "evidence",
+    "samples",
+    "transfers",
+    "boundaryChecks",
+    "collaborationRequests",
+    "debugReport",
+    "review"
+  ],
+  "sampleKinds": {
+    "direct": 3,
+    "alternative": 1
+  },
+  "fiveLayers": [
+    "positioning",
+    "productStrategy",
+    "contentMechanism",
+    "acquisitionChannels",
+    "observableCustomerPath"
+  ],
+  "layerFields": [
+    "publicFacts",
+    "inferences",
+    "unknowns",
+    "evidenceRefs"
+  ],
+  "knowledgeReceipt": {
+    "schemaVersion": 2,
+    "sourceFields": ["relativePath", "sha256"],
+    "sourceRoot": "evidence/knowledge-sources/",
+    "sourceShaRequired": true
+  },
+  "transferSequence": [
+    "surfaceAction",
+    "underlyingMechanism",
+    "enterpriseFit",
+    "originalImplementation",
+    "doNotCopy",
+    "antiCopyChecks",
+    "experiment"
+  ],
+  "note": "模板用于展示字段结构，不是可提交候选；正式候选必须由控制中心传入外部可信身份和projectRoot后验证。"
+}

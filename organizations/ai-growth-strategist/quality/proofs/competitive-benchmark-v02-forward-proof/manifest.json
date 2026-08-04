@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "proofId": "competitive-benchmark-v02-forward-proof",
+  "files": [
+    {
+      "path": "canonical-baseline.md",
+      "sha256": "e7653eef974a27e0783dd63ef4f35ad3729533f0da49c29db1949e8244b3593f"
+    },
+    {
+      "path": "canonical-candidate.json",
+      "sha256": "254b8a283557b97439ea25cc4f56c25666983080e62e9f80b7b38bfa18eb3e54"
+    },
+    {
+      "path": "canonical-forward.md",
+      "sha256": "408a96edf8211c1f298c0db025969fb24c70b08e09c986f9f116d1f839ea81c1"
+    },
+    {
+      "path": "canonical-scenario-input.txt",
+      "sha256": "825c6b61ece01e409e5d65c28a31fe12fa49c2e316e0adf99f13efef81f31ae9"
+    },
+    {
+      "path": "exact-invocation-prompt.txt",
+      "sha256": "fab380e8d0fd293c57da00317dc81f734ded3997295f89a3f432bd3bccdb6fea"
+    },
+    {
+      "path": "forward-invocation.json",
+      "sha256": "c44a184dab34bbca9b4f734b2e5bef7ab920e4c4a1cd1ab69c40564483ce2d2b"
+    },
+    {
+      "path": "forward-score.json",
+      "sha256": "a40784236261fe4ed023f4142eb9b7767f68a7f2ccca85a098c4ae9c3eea0c43"
+    }
+  ]
+}

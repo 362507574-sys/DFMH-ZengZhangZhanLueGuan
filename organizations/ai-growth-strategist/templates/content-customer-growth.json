@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "content-customer-growth",
+  "enterpriseId": "<enterprise-id>",
+  "taskId": "<yyyymmdd-nnn-slug>",
+  "status": "candidate",
+  "knowledgeContext": {"status":"<matched|no_hit|degraded>","evidencePath":"<relative-evidence-path>"},
+  "scope": {"growthOpportunityRef":"<opportunity-id>","objective":"<objective>","channels":["<channel>"],"timeRange":"<time-range>","constraints":["<constraint>"]},
+  "evidence": [],
+  "brandBrief": {"version":"<version>","effectiveAt":"<ISO timestamp>","valueProposition":"<value>","allowedClaims":["<claim>"],"forbiddenClaims":["<claim>"],"reviewTriggers":["<trigger>"]},
+  "contentPlan": [],
+  "customerLifecycle": [],
+  "consentPolicy": {"required":true,"purpose":"<purpose>","retentionDays":90,"optOutMechanism":"<mechanism>","refusalStopsContact":true,"noAutomatedOutreach":true},
+  "dealHandoff": {"version":"<version>","triggers":[],"nonTriggers":[],"customerReferenceRule":"use internal reference; exclude raw PII","requiredFields":["enterpriseId","taskId","handoffVersion","consentStatus","consentPurpose","retentionUntil","optOutStatus","source","touchpoints","customerReference","segmentNeedStage","evidenceReferences","knownUnknowns","promisesLimitsRisksNextActions"],"feedbackFields":["acceptedAt","rejectionReason","dealStage","outcome"]},
+  "repurchase": {"eligibilitySignals":[],"exclusions":[],"contentActions":[],"dealHandoffTrigger":"<explicit trigger>"},
+  "experiments": [],
+  "safetyChecks": {"fakeScarcity":false,"hiddenFees":false,"coercion":false,"vulnerableGroupTargeting":false,"fabricatedProof":false},
+  "boundaryChecks": {"changesEnterpriseStrategy":false,"changesBrandPositioning":false,"changesPricePolicy":false,"changesDealRules":false},
+  "collaborationRequests": [],
+  "review": {"baselineMetrics":["<baseline>"],"reviewAt":"<ISO timestamp>","decisionRules":["<success rule>","<stop rule>"]}
+}

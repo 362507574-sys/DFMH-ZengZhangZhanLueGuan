@@ -1,0 +1,4 @@
+interface:
+  display_name: "增长机会分析"
+  short_description: "从四条证据支线识别增长机会并形成可验证的双层优先级方案"
+  default_prompt: "使用 $growth-opportunity-analysis 判断当前最值得验证的增长机会，并给出证据、反证、优先级和有界实验。"

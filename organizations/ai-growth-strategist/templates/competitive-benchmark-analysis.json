@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "competitive-benchmark-analysis",
+  "enterpriseId": "<enterprise-id>",
+  "taskId": "<yyyymmdd-nnn-slug>",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "<matched|no_hit|degraded>",
+    "evidencePath": "<relative-evidence-path>"
+  },
+  "scope": {
+    "growthOpportunityRef": "<opportunity-id>",
+    "objective": "<objective>",
+    "productOrService": "<product-or-service>",
+    "region": "<region>",
+    "timeRange": "<time-range>",
+    "brandBriefVersion": "<version>",
+    "constraints": ["<constraint>"]
+  },
+  "evidence": [],
+  "benchmarks": [],
+  "insights": [],
+  "experiments": [],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [],
+  "review": {
+    "baselineMetrics": ["<baseline>"],
+    "reviewAt": "<ISO timestamp>",
+    "decisionRules": ["<success rule>", "<stop rule>"]
+  }
+}

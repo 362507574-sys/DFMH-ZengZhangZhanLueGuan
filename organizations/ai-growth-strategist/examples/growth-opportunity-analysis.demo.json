@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "growth-opportunity-analysis",
+  "enterpriseId": "demo-enterprise",
+  "taskId": "20260728-001-growth-test",
+  "status": "candidate",
+  "knowledgeContext": {
+    "status": "matched",
+    "evidencePath": "tasks/demo-enterprise/20260728-001-growth-test/evidence/knowledge_context.json"
+  },
+  "scope": {
+    "businessGoal": "提高有效咨询量并建立可追踪增长链路",
+    "productOrService": "演示用中小企业经营培训",
+    "region": "中国大陆",
+    "timeRange": "2026-Q3",
+    "constraints": [
+      "本文件仅用于演示契约，不代表真实企业结论"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "ev-behavior",
+      "type": "behavior_data",
+      "claim": "演示数据：经营复盘主题平均阅读率为12%，其他主题为6%。",
+      "sourceReference": "demo-internal-report",
+      "observedAt": "2026-07-20T00:00:00.000Z",
+      "appliesTo": "演示公众号近三个月内容"
+    },
+    {
+      "id": "ev-enterprise",
+      "type": "enterprise_fact",
+      "claim": "演示数据：两场直播报名400人、到场180人、咨询35人。",
+      "sourceReference": "demo-live-summary",
+      "observedAt": "2026-07-20T00:00:00.000Z",
+      "appliesTo": "演示用两场直播"
+    },
+    {
+      "id": "ev-inference",
+      "type": "inference",
+      "claim": "演示推断：经营复盘内容与直播可能构成优先增长链路。",
+      "sourceReference": "ev-behavior+ev-enterprise",
+      "observedAt": "2026-07-28T00:00:00.000Z",
+      "appliesTo": "演示用下季度增长假设"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-001",
+      "title": "经营复盘内容与直播联动",
+      "targetSegment": "演示用高互动人群",
+      "customerNeed": "把经营问题转为可执行动作",
+      "evidenceRefs": [
+        "ev-behavior",
+        "ev-enterprise",
+        "ev-inference"
+      ],
+      "growthMechanism": "用高需求内容引导用户自愿报名主题直播并提交咨询",
+      "growthPositioning": {
+        "prioritySegment": "经营复盘内容高互动人群",
+        "scenario": "季度经营复盘",
+        "channel": "公众号与许可式私域",
+        "notBrandRepositioning": true
+      },
+      "score": {
+        "demand": 5,
+        "enterpriseFit": 5,
+        "reachability": 4,
+        "competition": 2,
+        "effort": 3,
+        "risk": 3,
+        "total": 24
+      },
+      "validationExperiment": {
+        "hypothesis": "统一主题与提醒能提高到场并保持咨询质量",
+        "method": "连续两场使用统一内容入口与分层提醒",
+        "metric": "报名到场率与有效咨询率",
+        "target": "到场率高于演示基线且咨询率不下降",
+        "maximumDays": 45,
+        "maximumCost": "不新增付费投放",
+        "stopConditions": [
+          "两场到场率均不高于演示基线"
+        ]
+      },
+      "risks": [
+        "演示样本量较小"
+      ],
+      "unknowns": [
+        "咨询后的成交率和客单价未知"
+      ]
+    }
+  ],
+  "priorityOrder": [
+    "opp-001"
+  ],
+  "boundaryChecks": {
+    "changesEnterpriseStrategy": false,
+    "changesBrandPositioning": false,
+    "changesPricePolicy": false,
+    "changesDealRules": false
+  },
+  "collaborationRequests": [
+    {
+      "targetOrganization": "ai-deal-officer",
+      "reason": "复核有效咨询的交接条件，不改写增长机会排序。"
+    }
+  ],
+  "review": {
+    "baselineMetrics": [
+      "演示数据：经营复盘主题阅读率12%",
+      "演示数据：直播报名到场率45%"
+    ],
+    "reviewAt": "2026-09-30T00:00:00.000Z",
+    "decisionRules": [
+      "实验达到目标才考虑扩大",
+      "证据不足则保持待验证"
+    ]
+  }
+}

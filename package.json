@@ -1,0 +1,13 @@
+{
+  "name": "dfmh-zengzhangzhanlueguan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "帮助企业发现增长机会、拆解竞争打法并建立内容获客与客户增长系统。",
+  "scripts": {
+    "test": "node verify.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

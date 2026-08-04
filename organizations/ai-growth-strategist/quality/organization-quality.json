@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "organizationId": "ai-growth-strategist",
+  "declaredRootStatus": "designing",
+  "acceptsFormalTasks": false,
+  "skills": [
+    {
+      "id": "growth-opportunity-analysis",
+      "skillPath": "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/SKILL.md",
+      "workflowPath": "organizations/ai-growth-strategist/workflows/GROWTH_OPPORTUNITY_ANALYSIS.md",
+      "runtimePaths": [
+        "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_opportunity_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_planner.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_run_store.mjs",
+        "organizations/ai-growth-strategist/scripts/knowledge_preflight_adapter.mjs",
+        "organizations/ai-growth-strategist/scripts/validate_candidate.mjs"
+      ],
+      "testPaths": [
+        "organizations/ai-growth-strategist/tests/growth_opportunity_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/growth_planner.test.mjs",
+        "organizations/ai-growth-strategist/tests/growth_run_store.test.mjs",
+        "organizations/ai-growth-strategist/tests/knowledge_preflight_adapter.test.mjs"
+      ],
+      "qualityProofPaths": [
+        "organizations/ai-growth-strategist/quality/proofs/growth-opportunity-v02-forward-proof/manifest.json"
+      ],
+      "evidenceLevel": "simulation",
+      "knownGaps": [
+        "real_enterprise_task:尚未完成真实企业任务及帝王验收",
+        "modification_closure:尚未完成真实反馈后的版本化修改与再验收",
+        "exception_recovery:恢复机制已通过内部测试但尚未在真实企业长任务中验收",
+        "cross_organization_handoff:协作契约已测试但尚未完成真实跨组织交接闭环"
+      ],
+      "nextGate": "用一个真实企业增长机会任务完成首次交付、修改、故障恢复和跨组织交接验收"
+    },
+    {
+      "id": "competitive-benchmark-analysis",
+      "skillPath": "organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md",
+      "workflowPath": "organizations/ai-growth-strategist/workflows/COMPETITIVE_BENCHMARK_ANALYSIS.md",
+      "runtimePaths": [
+        "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_v2_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_claim_classifier.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_planner.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_debugger.mjs",
+        "organizations/ai-growth-strategist/scripts/competitive_benchmark_forward_proof.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_planner.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_run_store.mjs",
+        "organizations/ai-growth-strategist/scripts/knowledge_preflight_adapter.mjs",
+        "organizations/ai-growth-strategist/scripts/validate_candidate.mjs"
+      ],
+      "testPaths": [
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_hardening.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_third_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_fourth_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_fifth_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_sixth_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_seventh_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_eighth_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_ninth_round.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_claim_classifier.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_v2_skill_contract_doc.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_planner.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_debugger.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_cli_context.test.mjs",
+        "organizations/ai-growth-strategist/tests/competitive_benchmark_forward_proof.test.mjs",
+        "organizations/ai-growth-strategist/tests/growth_planner.test.mjs",
+        "organizations/ai-growth-strategist/tests/growth_run_store.test.mjs",
+        "organizations/ai-growth-strategist/tests/collaboration_contract.test.mjs"
+      ],
+      "qualityProofPaths": [
+        "organizations/ai-growth-strategist/quality/proofs/competitive-benchmark-v02-forward-proof/manifest.json"
+      ],
+      "evidenceLevel": "simulation",
+      "knownGaps": [
+        "real_enterprise_task:尚未完成真实企业竞争对标任务及帝王验收",
+        "modification_closure:尚未完成真实对标反馈后的版本化修改与再验收",
+        "exception_recovery:恢复机制已通过内部测试但尚未在真实检索冲突和中断中验收",
+        "cross_organization_handoff:哈希协作契约已测试但尚未完成品牌与成交组织的真实交接闭环"
+      ],
+      "nextGate": "用真实企业与真实公开竞品完成证据采集、原创适配、修改和跨组织复核验收"
+    },
+    {
+      "id": "content-customer-growth",
+      "skillPath": "organizations/ai-growth-strategist/skills/content-customer-growth/SKILL.md",
+      "workflowPath": "organizations/ai-growth-strategist/workflows/CONTENT_CUSTOMER_GROWTH.md",
+      "runtimePaths": [
+        "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/content_customer_growth_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/content_customer_growth_v2_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/content_customer_growth_planner.mjs",
+        "organizations/ai-growth-strategist/scripts/content_customer_growth_debugger.mjs",
+        "organizations/ai-growth-strategist/scripts/content_customer_growth_runtime.mjs",
+        "organizations/ai-growth-strategist/scripts/collaboration_contract.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_planner.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_run_store.mjs",
+        "organizations/ai-growth-strategist/scripts/growth_experiment_manager.mjs",
+        "organizations/ai-growth-strategist/scripts/knowledge_preflight_adapter.mjs",
+        "organizations/ai-growth-strategist/scripts/validate_candidate.mjs"
+      ],
+      "testPaths": [
+        "organizations/ai-growth-strategist/tests/content_customer_growth_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_planner.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_debugger.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_cli_v2.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_assets.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_hardening.test.mjs",
+        "organizations/ai-growth-strategist/tests/collaboration_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/growth_run_store.test.mjs",
+        "organizations/ai-growth-strategist/tests/knowledge_preflight_adapter.test.mjs"
+      ],
+      "qualityProofPaths": [
+        "organizations/ai-growth-strategist/tests/content_customer_growth_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_contract.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_assets.test.mjs",
+        "organizations/ai-growth-strategist/tests/content_customer_growth_v2_hardening.test.mjs"
+      ],
+      "evidenceLevel": "simulation",
+      "knownGaps": [
+        "real_enterprise_task:尚未完成真实企业内容与客户增长任务及帝王验收",
+        "modification_closure:尚未完成真实运营反馈后的版本化修改与再验收",
+        "exception_recovery:恢复机制已通过内部测试但尚未在真实触达异常和任务中断中验收",
+        "cross_organization_handoff:成交交接契约已测试但尚未完成真实客户生命周期闭环"
+      ],
+      "nextGate": "用真实企业在明确许可边界内完成内容交付、修改、异常恢复和成交反馈闭环验收"
+    }
+  ],
+  "fast": {
+    "boundedDispatch": true,
+    "reusesSharedRuntime": true,
+    "evidencePaths": [
+      "organizations/ai-growth-strategist/scripts/growth_planner.mjs",
+      "organizations/ai-growth-strategist/tests/growth_planner.test.mjs",
+      "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
+      "organizations/ai-growth-strategist/scripts/growth_basic_pipeline.mjs",
+      "organizations/ai-growth-strategist/tests/growth_basic_pipeline.test.mjs",
+      "organizations/ai-growth-strategist/scripts/growth_basic_run_manager.mjs",
+      "organizations/ai-growth-strategist/tests/growth_basic_run_manager.test.mjs",
+      "organizations/ai-growth-strategist/examples/growth-basic-pipeline.demo.json",
+      "organizations/ai-growth-strategist/integration/BASIC_THREE_LAYER_ACCEPTANCE.md",
+      "organizations/ai-growth-strategist/integration/BASIC_DEMO_RESULT.md",
+      "organizations/ai-growth-strategist/run-basic-self-check.ps1"
+    ]
+  },
+  "accurate": {
+    "separatesEvidence": true,
+    "locksExactDependencies": true,
+    "hasQualityGate": true,
+    "evidencePaths": [
+      "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
+      "organizations/ai-growth-strategist/scripts/growth_run_contract.mjs",
+      "organizations/ai-growth-strategist/scripts/collaboration_contract.mjs",
+      "organizations/ai-growth-strategist/scripts/validate_candidate.mjs",
+      "organizations/ai-growth-strategist/tests/candidate_cli.test.mjs"
+    ]
+  },
+  "stable": {
+    "persistsState": true,
+    "idempotentResume": true,
+    "boundedRetry": true,
+    "evidencePaths": [
+      "organizations/ai-growth-strategist/scripts/growth_run_store.mjs",
+      "organizations/ai-growth-strategist/scripts/growth_run_contract.mjs",
+      "organizations/ai-growth-strategist/tests/growth_run_store.test.mjs",
+      "organizations/ai-growth-strategist/tests/growth_run_contract.test.mjs"
+    ]
+  },
+  "knownGaps": [
+    "real_enterprise_task:三个技能均尚未完成真实企业任务及帝王验收",
+    "modification_closure:尚未完成真实用户修改指令的版本化闭环验收",
+    "exception_recovery:内部异常恢复测试已通过但真实长任务恢复尚未验收",
+    "cross_organization_handoff:内部协作契约已通过但真实五组织交接尚未验收"
+  ],
+  "nextOrganizationGate": "三个技能分别完成真实企业首次交付、修改闭环、异常恢复和跨组织交接后，才可申请operational评审"
+}
