@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repoName": "DFMH-ZengZhangZhanLueGuan",
+  "displayName": "AI增长战略官",
+  "kind": "organization-package",
+  "maturity": "designing",
+  "fullSystemEquivalent": false,
+  "simulationLevel": "standalone-contract",
+  "primaryEntrypoints": [
+    "organizations/ai-growth-strategist/AGENTS.md",
+    "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/SKILL.md",
+    "organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md",
+    "organizations/ai-growth-strategist/skills/content-customer-growth/SKILL.md"
+  ],
+  "capabilities": [
+    "增长机会分析：市场趋势、用户需求、行业机会、增长空间",
+    "竞争对标拆解：竞争对手定位、产品策略、内容打法、获客渠道、成交路径",
+    "内容与客户增长：短视频策划、小红书种草、私域运营、客户培育、复购设计"
+  ],
+  "externalRequirements": [
+    "Node.js 20 或更高版本，以及能够读取本地项目文件的 AI 工具。",
+    "使用者提供的真实企业、项目和任务资料；本仓库不附带任何客户数据。",
+    "需要最新市场、法规、平台或竞品事实时，由使用者环境提供可访问的网络检索能力。"
+  ],
+  "excludedPrivateDirectories": [
+    "temp",
+    "outputs",
+    "enterprises",
+    "issues",
+    "fixtures",
+    "tasks"
+  ],
+  "maxRelativePathLength": 120,
+  "acceptanceCommand": "npm test"
+}
