@@ -1,13 +1,10 @@
 $ErrorActionPreference = 'Stop'
 $organizationRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projectRoot = Resolve-Path (Join-Path $organizationRoot '..\..')
-$tests = Get-ChildItem -LiteralPath (Join-Path $organizationRoot 'tests') -Filter '*.test.mjs' |
-  Sort-Object Name |
-  ForEach-Object { $_.FullName }
 
 Push-Location $projectRoot
 try {
-  node --test $tests
+  node (Join-Path $organizationRoot 'scripts\organization_test_plan.mjs')
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
   $env:PYTHONUTF8 = '1'

@@ -5,12 +5,12 @@
   "displayName": "AI增长战略官",
   "status": "designing",
   "acceptsFormalTasks": false,
-  "generatedAt": "2026-08-04T04:34:57.397Z",
+  "generatedAt": "2026-08-06T01:27:44.193Z",
   "files": [
     {
       "relativePath": ".dfmh-generated-package",
       "bytes": 25,
-      "sha256": "bfbdd013c0f18e51b162f24109860b940e01a789c4d73fc506b73dd9016f357a"
+      "sha256": "1ea731b22eff0251ded235c18eb4b50fadc72a85ad7ccdd50713ad26cc0c06cb"
     },
     {
       "relativePath": ".gitignore",
@@ -24,8 +24,8 @@
     },
     {
       "relativePath": "control-center/registries/organization-output-standard.json",
-      "bytes": 1741,
-      "sha256": "84ee8c18f89a39609d7854844166537c352b25f033a9dd33b7ec1053e9d5540e"
+      "bytes": 1466,
+      "sha256": "ea1cb5f1c895281b6b674e53144112751b10987df9ebe8895b398c9264fc35eb"
     },
     {
       "relativePath": "control-center/registries/organizations.json",
@@ -54,8 +54,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/CHANGELOG.md",
-      "bytes": 2593,
-      "sha256": "15b0b7659fd2c9848d801713b9e477c1c7a1e3d0a045187b573ee0e67de369f8"
+      "bytes": 4540,
+      "sha256": "85ab6540f69323abedb79d4118a463ac4b67ae6751827f77f7bd632dbf7c1e34"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/config/organization.json",
@@ -64,8 +64,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/DECISIONS.md",
-      "bytes": 1525,
-      "sha256": "6b7f0d4d06cca750d8e139fa46f8d861646e8b81b87bdf8b702c681a2c24a22b"
+      "bytes": 2547,
+      "sha256": "fcd905e18cb37094208365eedde5fbca5fc68ef6f3684bca0954c95e51cd0b7e"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/ENVIRONMENT.md",
@@ -229,8 +229,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/run-self-check.ps1",
-      "bytes": 933,
-      "sha256": "3b9f99033d53455f5765339615d118a8e77c7013da362f7027471a80a4614c45"
+      "bytes": 835,
+      "sha256": "11e4deda2dd5a5f3537060d72d643e07412479e747aef8ab4afda102c8e3da30"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/bounded_process_runner.mjs",
@@ -304,8 +304,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/generate_shared_runtime_checkpoint.mjs",
-      "bytes": 35890,
-      "sha256": "dd18b0ad6f66062db1b1feb0f35a1d3c25a566afccff217c827816e41d173424"
+      "bytes": 36258,
+      "sha256": "1c62f45d32fa4969c297bbc4218b3e99ea0322d17850db4b718e76d76b785044"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/growth_approval_gate.mjs",
@@ -319,8 +319,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/growth_basic_run_manager.mjs",
-      "bytes": 38788,
-      "sha256": "05db1f75277b5fd454bb9079048d3b7ccdd3b99092794f72a62a5a32db7e74c8"
+      "bytes": 41738,
+      "sha256": "78228694f75af094bfe7dc87503d3c2c549346baa2aa01ef21d3939ebc0afca9"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/growth_common_contract.mjs",
@@ -404,8 +404,13 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/organization_self_check.mjs",
-      "bytes": 45651,
-      "sha256": "d6e197f82ab192ad6dc47c61ca15d6b1f8721f0a8ec7fcc688f3479daa9a7211"
+      "bytes": 46019,
+      "sha256": "e213e02fd81abf46ca9a6b69f48131a162ac6e70ed71c73cc597dea6709f6a58"
+    },
+    {
+      "relativePath": "organizations/ai-growth-strategist/scripts/organization_test_plan.mjs",
+      "bytes": 5593,
+      "sha256": "58267403074cd38beec06b3840ef2a1d9306de40f6e8a5ce6efa64da085dd864"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/scripts/strict_json.mjs",
@@ -424,8 +429,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md",
-      "bytes": 28365,
-      "sha256": "048250559197f9502f6ce24835ff9811322dfd52e85fff5e46e42e28e1502414"
+      "bytes": 30437,
+      "sha256": "7657367437f6c8d17660076f7b1c7290dbc9f5dcaddc464aa9935d742e3b0309"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/content-customer-growth/agents/openai.yaml",
@@ -434,8 +439,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/content-customer-growth/SKILL.md",
-      "bytes": 14901,
-      "sha256": "a178f2f01d20d29df0b8776506d9161465e79d74ec7a49f87a0eed4a42162193"
+      "bytes": 17156,
+      "sha256": "7c08649c431be706a87986d54d3ee4be8836255ae814db6c40e89adf33e47b4b"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/agents/openai.yaml",
@@ -444,8 +449,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/SKILL.md",
-      "bytes": 12940,
-      "sha256": "e8c5b6ca76be63f40d7448658d641b7f1e5c52282661c7d61f79f7a7bd42c2a1"
+      "bytes": 15248,
+      "sha256": "58980292f074e3dc85331deaf0354321f11fd50979310a90787d3cc92a1e2984"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/templates/competitive-benchmark-analysis.json",
@@ -479,18 +484,18 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/TROUBLESHOOTING.md",
-      "bytes": 797,
-      "sha256": "01f2cc90a60057f6f39857ef1dbc465c96c4d6297aa1c43aba524d5201d9dee4"
+      "bytes": 1199,
+      "sha256": "589c6efe0a3d8b1889862eb38189855a17461929eecbfbb3317442415795543d"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/USER_GUIDE.md",
-      "bytes": 2165,
-      "sha256": "d7f1a7d4e5f51b4f1aca1cf91f278a9d6cea6e61042fa70bbc2079cc591020b0"
+      "bytes": 2842,
+      "sha256": "9e5ea7c156381a538fad889b22e397b85d65a4596230173c9ab9b22461dae50d"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/WORKFLOWS.md",
-      "bytes": 2690,
-      "sha256": "eab5c71bb827bd1a2412a7272a65ee2c361c99c7a997fe94187e4995baa6a09b"
+      "bytes": 4087,
+      "sha256": "cad2cbc97b99101b80a4ad5600a031f4b70450002febc33ccfe809d8894b7f72"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/workflows/COMPETITIVE_BENCHMARK_ANALYSIS.md",
@@ -535,7 +540,7 @@
     {
       "relativePath": "README.md",
       "bytes": 2753,
-      "sha256": "d4cf0530c664ba97c0250f8aad9459f27b8bc60cac9e8102cece1402860137bd"
+      "sha256": "7d601605033a77a9cbeeb80be3bea791f3340f05ef91ee9d3c731e1ca193b6e5"
     },
     {
       "relativePath": "scripts/browser_continuous_action_controller.mjs",
@@ -568,6 +573,11 @@
       "sha256": "1f93982959b4456ec8397dca0faedb7d89157ab788bd0fb656691d1a0dca9032"
     },
     {
+      "relativePath": "shared/CAPITAL_ASSET_PROCUREMENT_STANDARD.md",
+      "bytes": 4607,
+      "sha256": "3a3501e5a3b95fd49725ff95b3b386e6ba001566c3109051feb71c4160ae1483"
+    },
+    {
       "relativePath": "shared/FEISHU_KNOWLEDGE_PREFLIGHT_STANDARD.md",
       "bytes": 3135,
       "sha256": "3cae425fc0a34be23c95f01c3ebd427bded67031e93d1cbac7836128cd7c0d04"
@@ -576,6 +586,11 @@
       "relativePath": "shared/IMAGE_GENERATION_CHANNEL_STANDARD.md",
       "bytes": 4087,
       "sha256": "ea8510fb8c222b89c27c12d15809b8c6513f0e1ff3c52138abe5c4e4ac7fd10d"
+    },
+    {
+      "relativePath": "shared/ORGANIZATION_AI_WORK_OWNERSHIP_STANDARD.md",
+      "bytes": 4306,
+      "sha256": "2f9fce1d1e71d4b753e176f4db3cc44b658a97fbc16eb3caf8dc4370ff2e7e63"
     },
     {
       "relativePath": "shared/PRODUCT_ASSET_FIDELITY_STANDARD.md",

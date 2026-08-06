@@ -31,6 +31,7 @@ import {
 const MANIFEST_FILE = 'basic-run.json';
 const TRANSACTION_FILE = 'basic-transaction.json';
 const ACCEPT_TRANSACTION_FILE = 'basic-accept-transaction.json';
+const ACCEPTED_SEAL_FILE = 'basic-accepted-seal.json';
 const RUN_LOCKS = new Map();
 const TEST_FACTORY_ENABLED_AT_LOAD = (
   typeof process.env.NODE_TEST_CONTEXT === 'string'
@@ -117,6 +118,14 @@ async function createBasicGrowthRunManagerInternal({
           run = await store.transition(identity, {
             expectedState: 'running_internal',
             nextState: 'reviewing',
+          });
+        }
+        if (run.state === 'completed') {
+          await verifyAcceptedSeal({
+            projectRoot: canonicalProjectRoot,
+            sealFile: paths.acceptedSealFile,
+            identity,
+            manifest,
           });
         }
         return publicStatus(run, manifest);
@@ -209,6 +218,14 @@ async function createBasicGrowthRunManagerInternal({
         run = await store.transition(identity, {
           expectedState: 'running_internal',
           nextState: 'reviewing',
+        });
+      }
+      if (run.state === 'completed') {
+        await verifyAcceptedSeal({
+          projectRoot: canonicalProjectRoot,
+          sealFile: paths.acceptedSealFile,
+          identity,
+          manifest,
         });
       }
       return publicStatus(run, manifest);
@@ -463,6 +480,12 @@ async function createBasicGrowthRunManagerInternal({
         manifest,
       }));
       if (run.state === 'completed') {
+        await verifyAcceptedSeal({
+          projectRoot: canonicalProjectRoot,
+          sealFile: paths.acceptedSealFile,
+          identity,
+          manifest,
+        });
         return publicStatus(run, manifest);
       }
       if (!manifest.stages.every((stage) => stage.status === 'completed')) {
@@ -497,6 +520,12 @@ async function createBasicGrowthRunManagerInternal({
         paths.manifestFile,
         nextManifest,
       );
+      await ensureAcceptedSeal({
+        projectRoot: canonicalProjectRoot,
+        sealFile: paths.acceptedSealFile,
+        identity,
+        manifest: nextManifest,
+      });
       await deleteAcceptTransaction({
         projectRoot: canonicalProjectRoot,
         transactionFile: paths.acceptTransactionFile,
@@ -975,6 +1004,12 @@ async function recoverAcceptTransaction({
   } else if (!plainDataEqual(manifest, nextManifest)) {
     throw new Error('basic growth accept recovery manifest conflicts with transaction');
   }
+  await ensureAcceptedSeal({
+    projectRoot,
+    sealFile: paths.acceptedSealFile,
+    identity,
+    manifest,
+  });
   await deleteAcceptTransaction({
     projectRoot,
     transactionFile: paths.acceptTransactionFile,
@@ -1006,9 +1041,85 @@ function basicPaths(workspacePaths, identity) {
     manifestFile: path.join(run.root, MANIFEST_FILE),
     transactionFile: path.join(run.root, TRANSACTION_FILE),
     acceptTransactionFile: path.join(run.root, ACCEPT_TRANSACTION_FILE),
+    acceptedSealFile: path.join(run.root, ACCEPTED_SEAL_FILE),
     artifactDirectory: path.join(run.root, 'artifacts'),
     handoffDirectory: path.join(run.root, 'handoffs'),
   });
+}
+
+function acceptedSealDocument(identity, manifest) {
+  return {
+    schemaVersion: 1,
+    kind: 'accepted-growth-run',
+    identity: jsonSafeClone(identity),
+    taskId: manifest.taskId,
+    acceptedAt: manifest.acceptedAt,
+    manifestRevision: manifest.revision,
+    manifestSha256: createHash('sha256')
+      .update(serializeJson(manifest))
+      .digest('hex'),
+  };
+}
+
+async function ensureAcceptedSeal({
+  projectRoot,
+  sealFile,
+  identity,
+  manifest,
+}) {
+  const expected = acceptedSealDocument(identity, manifest);
+  await assertBoundedPath(projectRoot, sealFile, { allowMissing: true });
+  let handle;
+  try {
+    handle = await open(sealFile, 'wx');
+    await handle.writeFile(serializeJson(expected), 'utf8');
+    await handle.sync();
+  } catch (error) {
+    if (error?.code !== 'EEXIST') throw error;
+    await verifyAcceptedSeal({
+      projectRoot,
+      sealFile,
+      identity,
+      manifest,
+    });
+  } finally {
+    await handle?.close();
+  }
+}
+
+async function verifyAcceptedSeal({
+  projectRoot,
+  sealFile,
+  identity,
+  manifest,
+}) {
+  const value = await readStrictJson(sealFile, {
+    label: 'basic growth accepted seal',
+    maxBytes: 64 * 1024,
+  }).catch((error) => {
+    throw new Error(`basic growth accepted seal is missing or invalid: ${error.message}`, {
+      cause: error,
+    });
+  });
+  assertExactKeys(value, [
+    'schemaVersion',
+    'kind',
+    'identity',
+    'taskId',
+    'acceptedAt',
+    'manifestRevision',
+    'manifestSha256',
+  ], 'basic growth accepted seal');
+  assertExactKeys(value.identity, [
+    'enterpriseId',
+    'businessProjectId',
+    'runId',
+  ], 'basic growth accepted seal identity');
+  const expected = acceptedSealDocument(identity, manifest);
+  if (!plainDataEqual(value, expected)) {
+    throw new Error('basic growth accepted seal does not match the accepted manifest');
+  }
+  return deepFreeze(jsonSafeClone(value));
 }
 
 function normalizeIdentity(value) {
