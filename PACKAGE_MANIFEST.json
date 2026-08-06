@@ -5,12 +5,12 @@
   "displayName": "AI增长战略官",
   "status": "designing",
   "acceptsFormalTasks": false,
-  "generatedAt": "2026-08-06T01:27:44.193Z",
+  "generatedAt": "2026-08-06T01:58:32.476Z",
   "files": [
     {
       "relativePath": ".dfmh-generated-package",
       "bytes": 25,
-      "sha256": "1ea731b22eff0251ded235c18eb4b50fadc72a85ad7ccdd50713ad26cc0c06cb"
+      "sha256": "5b0fe1ee8e9cb466e353cc9c5935fbd30c2e93316c3bf8842b0bad3223a9e601"
     },
     {
       "relativePath": ".gitignore",
@@ -429,8 +429,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/competitive-benchmark-analysis/SKILL.md",
-      "bytes": 30437,
-      "sha256": "7657367437f6c8d17660076f7b1c7290dbc9f5dcaddc464aa9935d742e3b0309"
+      "bytes": 30989,
+      "sha256": "a0cad853930cd8f5bb648aa6b7736c358da22f10d9046c974d92686fec09b90e"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/content-customer-growth/agents/openai.yaml",
@@ -439,8 +439,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/content-customer-growth/SKILL.md",
-      "bytes": 17156,
-      "sha256": "7c08649c431be706a87986d54d3ee4be8836255ae814db6c40e89adf33e47b4b"
+      "bytes": 17708,
+      "sha256": "b0a92421e9d43da91720763c5ce96995d88ddf6ad7fbb492298a856922b3674e"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/agents/openai.yaml",
@@ -449,8 +449,8 @@
     },
     {
       "relativePath": "organizations/ai-growth-strategist/skills/growth-opportunity-analysis/SKILL.md",
-      "bytes": 15248,
-      "sha256": "58980292f074e3dc85331deaf0354321f11fd50979310a90787d3cc92a1e2984"
+      "bytes": 15800,
+      "sha256": "0e366323de1502c5a3ef486a9c506e0ada944373784d14cb0cd247619f2ce1e8"
     },
     {
       "relativePath": "organizations/ai-growth-strategist/templates/competitive-benchmark-analysis.json",
@@ -534,13 +534,13 @@
     },
     {
       "relativePath": "QUICKSTART.md",
-      "bytes": 1121,
-      "sha256": "ba4dfdbce5ffb781aa197fd00b64fed24a2af337c6560df3c76df44e15b7da1d"
+      "bytes": 3493,
+      "sha256": "ab57b00190831c3bb433b3a041483a77861496a111afb01c62679daa6ec12cbf"
     },
     {
       "relativePath": "README.md",
-      "bytes": 2753,
-      "sha256": "7d601605033a77a9cbeeb80be3bea791f3340f05ef91ee9d3c731e1ca193b6e5"
+      "bytes": 3478,
+      "sha256": "96c92cf1a3efeb0eabfbec8965d5bb864b79bb22546918166f215a0224250584"
     },
     {
       "relativePath": "scripts/browser_continuous_action_controller.mjs",
